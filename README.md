@@ -1,1 +1,1 @@
-(https://kombuchauncle.github.io/typing-test/)
+(https://kombuchauncle.github.io/typing-test/bar-typist/)
