@@ -48,6 +48,16 @@ const PASSAGES = {
       title: "Due Process",
       source: "CA Bar Review",
       text: "The Due Process Clause prohibits the government from depriving any person of life, liberty, or property without due process of law. Procedural due process requires notice and an opportunity to be heard before such a deprivation occurs. Substantive due process protects fundamental rights from government interference absent a compelling justification. Fundamental rights recognized under substantive due process include the right to marry, the right to privacy, and the right to direct the upbringing and education of one's children."
+    },
+    {
+      title: "Standing",
+      source: "Feb 2023 Essay 2",
+      text: "In order for a party to bring suit, they must have standing. Standing requires injury — some harm suffered due to the actions of another party — causation, meaning the defendant caused the injury, and redressability, meaning there is a way for the court to remedy the harm. A party also lacks standing on ripeness grounds if there is no injury yet or the injury is merely anticipated and not yet concrete."
+    },
+    {
+      title: "Equal Protection and Facial Classification",
+      source: "Feb 2023 Essay 2",
+      text: "Equal protection is raised when a government act impedes on the rights of people in a way determined by facial classification. Facial classification exists when there is a clear distinction in who benefits from the legislation and who is disadvantaged. Groups bringing equal protection arguments must be an identifiable group that is fundamentally protected. If a group is being discriminated against, there must be a history of discrimination that the government is attempting to remedy."
     }
   ],
   "Criminal Law": [
@@ -60,6 +70,36 @@ const PASSAGES = {
       title: "Homicide",
       source: "CA Bar Review",
       text: "Murder at common law is the unlawful killing of another with malice aforethought. Malice may be express — intent to kill — or implied by intent to cause grievous bodily harm, depraved heart recklessness, or felony murder. First degree murder requires premeditation and deliberation. Second degree murder covers all other malicious killings. Voluntary manslaughter reduces an intentional killing when the defendant acted in the heat of passion upon adequate provocation, before a reasonable cooling-off period had elapsed."
+    },
+    {
+      title: "Conspiracy",
+      source: "CA Essay Q1, Feb 2022",
+      text: "Conspiracy is an agreement between two or more people to commit a crime together with the intent to complete the crime planned. Conspiracy is usually complete once the parties agree and take a step in furtherance of this plan; mere preparation is sufficient. Once conspiracy is completed, co-conspirators are liable for the crime intended and any other foreseeable crimes committed by each other during the commission of the conspired act, unless they effectively withdraw."
+    },
+    {
+      title: "Conspiracy Withdrawal",
+      source: "CA Essay Q1, Feb 2022",
+      text: "Withdrawal from conspiracy itself is not possible once it is completed. However, withdrawal from subsequent crimes is possible by timely notice to all co-conspirators, letting them reconsider their choices to continue or withdraw, and immediately stopping any participation in the act. Conspiracy is an inchoate crime that, unlike attempt and solicitation, can be charged separately and does not merge into the crime conspired for. It is a specific intent crime requiring each conspirator to intentionally enter into the agreement."
+    },
+    {
+      title: "Felony Murder",
+      source: "CA Essay Q1, Feb 2022",
+      text: "A felony murder is a murder resulting from and during the commission of a felony crime — burglary, arson, robbery, rape, and kidnapping. It encompasses the period from the initiation of the crime until the felon reaches safety and has walked away from the scene. A felon is held responsible for any death resulting during the felony, satisfying the prima facie case of murder: the killing of another with intent or reckless disregard for human life."
+    },
+    {
+      title: "Larceny, Burglary, and Arson",
+      source: "July 2023 CA Essay Q4",
+      text: "Under common law, larceny is the trespassory taking and carrying away the property of another with the intent to permanently deprive the owner of the property. Burglary at common law is the breaking and entering of a dwelling at night with the intention to commit a felony within; modernly, statutes have eliminated the nighttime and dwelling requirements. Arson at common law is the burning of a dwelling of another; modernly, statutes have expanded this to cover any structure or building."
+    },
+    {
+      title: "Degrees of Homicide",
+      source: "July 2023 CA Essay Q4",
+      text: "Under common law, murder is the unlawful killing of a human being done with malice aforethought. First degree murder requires premeditation and deliberation. Second degree murder encompasses intent to kill, intent to cause grave bodily harm, reckless disregard for human life, and felony murder. Voluntary manslaughter is a killing done with adequate provocation or under imperfect self-defense. The defense of necessity is never available as a defense to any homicide charge."
+    },
+    {
+      title: "Attempt",
+      source: "CA Essay Q1, Feb 2022",
+      text: "Attempt is a specific intent crime, and it merges into the completed crime if the crime is carried out. Even though the attempted offense might be only a general intent or malice crime, attempt itself always requires specific intent — unless that specific intent is found, the person cannot be charged for attempt. Attempt also requires a substantial step toward the targeted offense."
     }
   ],
   "Criminal Procedure": [
@@ -69,12 +109,52 @@ const PASSAGES = {
       text: "The Fourth Amendment prohibits unreasonable searches and seizures and requires that warrants be supported by probable cause, particularly describe the place to be searched, and describe the persons or things to be seized. A search occurs when the government intrudes upon a person's reasonable expectation of privacy. Probable cause exists when the facts and circumstances known to the officer would lead a reasonable person to believe that evidence of a crime will be found in the place to be searched."
     },
     {
+      title: "Warrant Exceptions",
+      source: "CA Essay Q1, Feb 2022",
+      text: "Under the Fourth Amendment, individuals are protected from unreasonable searches and seizures. The general rule is that a police officer must have probable cause to obtain a search or arrest warrant before proceeding. However, there are exceptions to the warrant requirement: stop and frisk, plain view, the automobile exception, consent, exigent circumstances and hot pursuit, and search incident to a lawful arrest."
+    },
+    {
+      title: "Voluntariness of Statements",
+      source: "Feb Bar Exam 75, Feb 2023",
+      text: "A statement is involuntary if it is not a product of a rational intellect and free will. In cases of claimed psychological coercion, the question is whether the influences brought to bear upon the accused were such as to overbear the accused's will to resist and bring about confessions not freely determined. Absent some indication of coercive police activity, an admission or confession cannot be deemed involuntary within the Due Process Clause of the Fourteenth Amendment."
+    },
+    {
+      title: "Surrounding Circumstances Test",
+      source: "Feb Bar Exam 75, Feb 2023",
+      text: "In determining whether an accused's will is overborne, an examination must be made of all the surrounding circumstances including: the characteristics of the accused, such as the defendant's maturity, education, physical condition, and mental health and acuity; and the details of the interrogation that indicate coercion, including the length of the interrogation, the location, and whether the questioning was continuous."
+    },
+    {
+      title: "Exclusionary Rule and Miranda Custody and Interrogation",
+      source: "July 2023 CA Essay Q4",
+      text: "The Exclusionary Rule prohibits the introduction of evidence obtained in violation of one's Fourth, Fifth, or Sixth Amendment rights. Miranda rights are triggered only when a suspect is in custody and subject to interrogation. Custody means the person is not free to leave. Interrogation occurs when a question from a state actor is likely to elicit an incriminating response. A voluntary statement is not subject to Miranda and does not violate the Fifth Amendment privilege against self-incrimination."
+    },
+    {
+      title: "Sixth Amendment Right to Counsel Attachment",
+      source: "Feb 2024 Q4 Report",
+      text: "The Sixth Amendment guarantees a defendant the right to counsel once formally charged with a crime. While a defendant does not have the right to counsel during a pre-arraignment lineup or at an arraignment hearing, the right officially attaches once the defendant has been formally charged. Once formal charges are brought, any subsequent elicitation of incriminating statements from the defendant without counsel present raises a constitutional question under the Sixth Amendment."
+    },
+    {
       title: "Miranda and Custodial Interrogation",
       source: "CA Bar Review",
       text: "The Fifth Amendment privilege against self-incrimination protects individuals from being compelled to testify against themselves in a criminal proceeding. Miranda v. Arizona requires law enforcement to advise suspects of their rights to silence and counsel before custodial interrogation. A suspect is in custody when, from the totality of the circumstances, a reasonable person would not feel free to terminate the encounter. A valid waiver of Miranda rights must be made voluntarily, knowingly, and intelligently."
     }
   ],
   "Evidence": [
+    {
+      title: "California Relevance and Evidence Code 352",
+      source: "Feb 2024 Q4 Report",
+      text: "Under California law, evidence is relevant if its admission tends to prove or disprove a material fact of the situation at hand. The court may exercise its discretion to exclude relevant evidence if its probative value is substantially outweighed by the risk of unfair prejudice to the party against whom it is offered. Under Evidence Code 352, relevant evidence can also be excluded if it is needlessly cumulative, confusing to the jury, or designed to shock or upset the trier of fact."
+    },
+    {
+      title: "Hearsay Exceptions and Prior Inconsistent Statements",
+      source: "Feb 2024 Q4 Report",
+      text: "Under California law, hearsay is an out-of-court statement offered by a declarant for the truth of the matter asserted. Statements deemed hearsay are inadmissible unless an exception applies, such as statements made for medical diagnosis, spontaneous statements, statements made under the belief of imminent death, or statements by a party opponent. A prior inconsistent statement — where a witness's prior assertion contradicts their in-court testimony — may be used to attack credibility on cross-examination, provided the witness is available to explain or deny the inconsistency."
+    },
+    {
+      title: "Party Opponent Admissions and Attorney-Client Privilege",
+      source: "Q4 2022 Report",
+      text: "Statements by party opponents — statements made by one of the parties to the litigation — are classified as non-hearsay and are admissible. Unlike statements against interest, the declarant need not be unavailable. Attorney-client privilege applies to all communications made with clients in anticipation of litigation and survives the end of the attorney-client relationship. Work product prepared by an attorney in preparation for litigation is similarly privileged and may not be admitted against the client."
+    },
     {
       title: "Hearsay",
       source: "CA Bar Review",
@@ -130,6 +210,36 @@ const PASSAGES = {
       title: "Transmutation",
       source: "CA Essay 5, July 2021",
       text: "Transmutation is an agreement between two parties to change the characterization of the property. After 1985, it must be in signed writing by the adversely affected spouse, unless it is for an item of insubstantial value."
+    },
+    {
+      title: "Community Property Presumption",
+      source: "Comm Prop Essay, Feb 2022",
+      text: "California is a community property state, which means that all property acquired prior to marriage is considered separate property, and all property acquired during the marriage is considered to be community property unless it was from a bequest, descent, the rents and profits of separate property, or when separate property is used to purchase property directly during the marriage. Community property is divided in kind at the time of judgment unless an exception applies."
+    },
+    {
+      title: "Direct Tracing and Exhaustion Method",
+      source: "Comm Prop Essay, Feb 2022",
+      text: "A direct tracing can be accomplished by showing that separate property flowed directly from one account into another that was not commingled with community property funds. When a commingled account exists, the separate property claim can instead be proven through the exhaustion method by showing that the community funds therein were insufficient to cover the community expenses at the time those expenses arose."
+    },
+    {
+      title: "Spousal Fiduciary Duty",
+      source: "Comm Prop Essay, Feb 2022",
+      text: "The Family Code requires that married spouses have a fiduciary duty to one another. This duty requires good faith and fair dealing, and to act as a reasonable person in making investment decisions. One spouse's poor investment alone is not enough to breach this duty; there must be reckless negligence on the part of the breaching spouse."
+    },
+    {
+      title: "Separation and Post-Separation Debt",
+      source: "Comm Prop Essay, Feb 2022",
+      text: "The court defines separation as at least one party's intent to abandon the marriage without hope of reconciliation. When a debt is incurred by a party post-separation, it may be considered community in nature only if it was used for the benefit of the community or to improve community property."
+    },
+    {
+      title: "Equal Management and Community Debts",
+      source: "Feb 2024 CA Essay Q1",
+      text: "Married spouses have equal management power over community finances. Either spouse may purchase property or apply for a loan without the other spouse's knowledge, and debts incurred during the marriage are presumed to be community property. However, when one spouse commits a criminal act such as forgery in obtaining a loan, the innocent spouse is not liable for debts arising from that criminal activity."
+    },
+    {
+      title: "Spousal Fiduciary Duty and Remedy",
+      source: "Feb 2024 CA Essay Q1",
+      text: "Spouses owe each other the highest fiduciary duty, requiring honesty, good faith, and full disclosure of their financial situation. When one spouse breaches this duty, the court may assign the entirety of the undisclosed asset or liability to the breaching spouse. Marital community property ends at separation, which occurs when at least one spouse intends to end the marriage and does not return, even without a formal divorce filing."
     }
   ],
   "Wills and Trusts": [
@@ -176,6 +286,16 @@ const PASSAGES = {
   ],
   "Professional Responsibility": [
     {
+      title: "CRPC vs ABA on Confidentiality",
+      source: "Q4 2022 Report",
+      text: "Under both the CRPC and ABA rules, an attorney has a duty of confidentiality. In California, a lawyer may reveal client confidences only to prevent a criminal act likely to result in substantial bodily harm or death. The ABA recognizes the same exception but also permits disclosure to prevent damage to the financial interests of another when the lawyer's services are being used to further that harm, and permits disclosure when the client consents."
+    },
+    {
+      title: "Mandatory and Permissive Withdrawal",
+      source: "Q4 2022 Report",
+      text: "In California, withdrawal is mandatory where the attorney has probable cause to believe the client is using their services to harass or maliciously injure another, where representation would violate the CRPC, where a mental or physical impairment renders representation unreasonably difficult, or where the client has discharged the attorney. The ABA aligns on the latter three grounds and additionally permits permissive withdrawal when the attorney finds the client's actions to be morally reprehensible."
+    },
+    {
       title: "Duty of Confidentiality",
       source: "CA Bar Review",
       text: "An attorney owes a duty of confidentiality to clients regarding all information relating to the representation, regardless of the source or whether the client has requested secrecy. This duty is broader than the attorney-client privilege and persists after the representation ends. The attorney may reveal confidential information only with the client's informed consent, when impliedly authorized to carry out the representation, or when disclosure is required or permitted by law. California permits — but does not require — disclosure to prevent reasonably certain death or substantial bodily harm."
@@ -184,9 +304,54 @@ const PASSAGES = {
       title: "Conflicts of Interest",
       source: "CA Bar Review",
       text: "A lawyer must not represent a client if the representation involves a concurrent conflict of interest, which exists when representation of one client is directly adverse to another client, or when there is a significant risk that the representation will be materially limited by the lawyer's responsibilities to another client or the lawyer's own interests. Concurrent conflicts may be waived by informed written consent if the lawyer reasonably believes they can provide competent and diligent representation to each affected client and applicable law does not prohibit the waiver."
+    },
+    {
+      title: "Criminal Contingency Fees and Client Gifts",
+      source: "Feb 2024 Q3 Report",
+      text: "It is an ethical violation under both California and ABA rules for an attorney to base compensation on a contingency fee in a criminal case. A lawyer can never be paid on a contingency for services rendered in criminal matters. Additionally, under both California and ABA Rules, lawyers are not allowed to accept large gifts in connection with their services, although small gifts as a token of appreciation for representation or referrals tend to be acceptable."
+    },
+    {
+      title: "Witness and Expert Witness Compensation",
+      source: "Feb 2024 Q3 Report",
+      text: "Under California and ABA Rules, lay witnesses may be reasonably compensated for time spent testifying, typically by reimbursement for travel and lodging rather than a direct fee. Expert witnesses, by contrast, may be reasonably compensated for their time and appearance at trial. There are no bright-line rules about how much an expert should be compensated, as it varies by field and level of expertise."
+    },
+    {
+      title: "Supervising Subordinates and Duty of Candor",
+      source: "Q2 2021 Report July",
+      text: "Lawyers are responsible to properly supervise subordinates, whether they be junior attorneys or office staff, and are ultimately responsible for the subordinate's actions. A lawyer also has a duty of honesty and candor to opposing counsel and to the court. When a conflict or error arises — including one caused by a supervised employee — the attorney must disclose it to the affected parties rather than concealing it out of personal or professional loyalty."
+    },
+    {
+      title: "Conflict of Interest and Withdrawal",
+      source: "Q2 2021 Report July",
+      text: "When an attorney believes or knows that she has a conflict related to the case, she must disclose it to her client and resolve the issue by either withdrawing or obtaining written consent. California requires written consent by the client to continue representation despite a conflict. A lawyer may attempt to withdraw if it would not materially impact the client's case; if withdrawal would be materially harmful, a court must resolve the situation."
+    },
+    {
+      title: "Duty of Competence, Communication, and Loyalty",
+      source: "Q2 2021 Report July",
+      text: "An attorney has a duty to represent her client with the knowledge and skill required for the matter. A lawyer also has a duty to communicate with her client regarding decisions, settlements, and information material to the case. Every lawyer owes a duty of loyalty to her client and must represent the case with zeal. A lawyer has a corresponding duty to keep client information and case evidence secure to prevent loss or damage."
+    },
+    {
+      title: "Duty of Candor and Personal Opinion",
+      source: "Feb 2024 Q3 Report",
+      text: "A lawyer may ask the court to find their client not guilty, but may not express a personal opinion about the merits of the case or the credibility of witnesses. Conditioning an expert witness's compensation on changing their opinion is a clear ethical violation — it directs the witness to commit perjury and breaches the lawyer's duty of candor to the tribunal."
     }
   ],
   "Business Associations": [
+    {
+      title: "General Partnership Formation and Joint Liability",
+      source: "July 2023 CA Essay Q1",
+      text: "A general partnership is formed when two or more persons come together to form a business for profit. No formal filing with the state is required for a partnership to exist. In a partnership, all partners are jointly and severally liable for the torts and damages to third persons incurred by the partnership. A partner is personally liable for their own torts, but if the tort arises from partnership activity, the other partners share liability jointly and severally."
+    },
+    {
+      title: "Respondeat Superior",
+      source: "July 2023 CA Essay Q1",
+      text: "Under the doctrine of respondeat superior, an employer is vicariously liable for torts committed by an employee acting within the scope of employment. The employer has authority and control over the employee, and when the employee causes harm during the work hour or in furtherance of the employer's business, the employer is responsible for the resulting damages. Whether an employee was acting within the scope of employment turns on the nature of the activity and the employer's policies."
+    },
+    {
+      title: "Agency Authority and Partnership Liability for Agent Torts",
+      source: "July 2023 CA Essay Q1",
+      text: "A person may be an agent of a partnership when an agency is formed through apparent or implied authority. An implied agency exists when the partnership evidently implies that the person is acting on its behalf. Apparent authority arises when the agent works on behalf of the partnership, the partnership is aware of the relationship, and third parties reasonably believe the agent has authority. When an agent commits a tort within the scope of the agency, the partnership — not the agent — bears liability."
+    },
     {
       title: "Agency Authority",
       source: "CA Bar Review",
@@ -220,6 +385,16 @@ const PASSAGES = {
       title: "Supremacy and Preemption",
       source: "CA Bar Review",
       text: "The Supremacy Clause provides that federal law is the supreme law of the land, preempting inconsistent state law. Express preemption occurs when Congress explicitly states its intent to occupy a field. Implied preemption includes field preemption — where the scheme of federal regulation is so pervasive that Congress intended to leave no room for state regulation — and conflict preemption, which arises when compliance with both federal and state law is impossible, or when state law stands as an obstacle to the accomplishment of federal objectives."
+    },
+    {
+      title: "Spending Power and Conditional Funds",
+      source: "Feb 2023 Essay 2",
+      text: "Congress has the power to determine where it allocates its funds. It may direct spending properly and reasonably when funds are used for the general welfare of the people. Congress may also make funding conditional, as long as the condition is reasonably connected to and has a proper nexus with the purpose of the fund allocation. A condition that is purely voluntary to the states is generally not unconstitutional on its face."
+    },
+    {
+      title: "Commandeering",
+      source: "Feb 2023 Essay 2",
+      text: "In order for Congress to pass legislation, it must act through one of its enumerated powers, including the Commerce Clause and the Taxing and Spending powers. Commandeering occurs when Congress passes legislation that forces states to adopt a law, creates an unreasonable funding condition, or compels states to enact similar legislation in order to receive federal funds. Even a facially voluntary condition may be unconstitutional if it is coercive in effect."
     }
   ]
 };
