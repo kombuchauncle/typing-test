@@ -120,6 +120,16 @@ const PASSAGES = {
       title: "Management and Division",
       source: "CA Bar Review",
       text: "Each spouse has equal management and control over community property during marriage. Either spouse may act alone in ordinary transactions but both must join in transactions affecting the family home, gifts of community property, or transactions that substantially impair the other spouse's interest. Upon dissolution of marriage, the court must divide community property equally absent a valid agreement or other recognized exception. Earnings and business interests acquired through the labor and skill of either spouse during marriage constitute community property."
+    },
+    {
+      title: "Community Property Defined",
+      source: "CA Essay 5, July 2021",
+      text: "California is a community property state. Property acquired during marriage is Community Property. Property acquired before or after marriage via bequest, gift, or devise is considered Separate Property. Property can be classified by source, characterization of property, or special presumptions."
+    },
+    {
+      title: "Transmutation",
+      source: "CA Essay 5, July 2021",
+      text: "Transmutation is an agreement between two parties to change the characterization of the property. After 1985, it must be in signed writing by the adversely affected spouse, unless it is for an item of insubstantial value."
     }
   ],
   "Wills and Trusts": [
@@ -132,6 +142,36 @@ const PASSAGES = {
       title: "Express Trust Formation",
       source: "CA Bar Review",
       text: "A valid express trust requires a settlor with capacity, a present manifestation of intent to create a trust, a definite beneficiary or valid charitable purpose, identifiable trust property, and a trustee. A trustee owes fiduciary duties of loyalty and prudence to the beneficiaries. The duty of loyalty requires the trustee to administer the trust solely in the interest of the beneficiaries and to avoid conflicts of interest. Under the prudent investor standard, the trustee must manage trust assets as a prudent investor would, considering the purposes and circumstances of the trust."
+    },
+    {
+      title: "Attested Will Requirements",
+      source: "CA Essay 5, July 2021",
+      text: "A valid will requires a signed writing signed by the testator with present intent and capacity in the joint presence of two disinterested witnesses who sign during the testator's lifetime."
+    },
+    {
+      title: "Disinterested Witnesses",
+      source: "CA Essay 5, July 2021",
+      text: "The two disinterested witnesses must be in the presence of the testator when he signs or when the testator acknowledges his signature to them. The witnesses must understand they are signing a will, but do not need to know its content. Additionally, the witnesses must sign during the testator's lifetime, but both do not need to sign in his presence or each other."
+    },
+    {
+      title: "Harmless Error",
+      source: "CA Essay 5, July 2021",
+      text: "Under California law, if the witness requirement is not met, the will may still be admitted to probate if there is clear and convincing evidence that the testator intended it to be his will."
+    },
+    {
+      title: "Holographic Will",
+      source: "CA Essay 5, July 2021",
+      text: "A holographic will requires signature and material provisions in the testator's own handwriting. There is no witness requirement, but a date is required."
+    },
+    {
+      title: "Omitted Child",
+      source: "CA Essay 5, July 2021",
+      text: "An omitted child can receive an intestate share if born or adopted after the will, unless intentionally omitted, provided for outside the will, or the other parent receives a substantial part of the estate."
+    },
+    {
+      title: "Omitted Spouse",
+      source: "CA Essay 5, July 2021",
+      text: "An omitted spouse can receive an intestate share if married after the will was executed, unless intentionally omitted, provided for outside the will, or the spouse has signed a valid waiver."
     }
   ],
   "Professional Responsibility": [
