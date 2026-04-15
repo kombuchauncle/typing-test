@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>bar typist</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<center>
+  <h1>bar typist</h1>
+  <p><small>type to study for the california bar exam.</small></p>
+
+  <!-- section 1: typing test -->
+  <div id="test-section">
+    <p id="passage-meta" style="font-size:0.82em;color:#666;margin-bottom:6px;text-align:left;"></p>
+    <div id="passage-display"></div>
+    <textarea id="type-input" rows="4"
+      spellcheck="false"
+      autocorrect="off"
+      autocapitalize="off"
+      autocomplete="off"
+      placeholder="start typing to begin..."></textarea>
+    <div id="live-stats">
+      <span id="stat-wpm">0 wpm</span>
+      <span id="stat-acc">100% acc</span>
+      <span id="stat-time">0:00</span>
+    </div>
+    <div style="text-align:left;margin-bottom:8px;">
+      <button class="btn-link" onclick="tryAgain()">try again</button>
+      &nbsp;·&nbsp;
+      <button class="btn-link" onclick="newPassage()">new passage</button>
+    </div>
+  </div>
+
+  <!-- section 2: results -->
+  <div id="results-section" class="hidden">
+    <div id="results-grid">
+      <div class="result-item">
+        <span class="result-value" id="res-wpm">—</span>
+        <span class="result-label">wpm</span>
+      </div>
+      <div class="result-item">
+        <span class="result-value" id="res-acc">—</span>
+        <span class="result-label">accuracy</span>
+      </div>
+      <div class="result-item">
+        <span class="result-value" id="res-time">—</span>
+        <span class="result-label">time</span>
+      </div>
+      <div class="result-item">
+        <span class="result-value" id="res-errors">—</span>
+        <span class="result-label">errors</span>
+      </div>
+    </div>
+    <div id="feedback-box"></div>
+    <div id="score-entry" class="hidden">
+      <input type="text" id="score-name" placeholder="your name" maxlength="24">
+      <button class="btn-link" onclick="saveScore()">save score</button>
+    </div>
+    <div style="text-align:left;margin-bottom:8px;">
+      <button class="btn-link" onclick="tryAgain()">try again</button>
+      &nbsp;·&nbsp;
+      <button class="btn-link" onclick="newPassage()">new passage</button>
+    </div>
+  </div>
+
+  <!-- section 3: high scores -->
+  <p class="section-header"><b><i>high scores</i></b></p>
+  <div id="scores-list" style="text-align:left;"></div>
+  <div style="text-align:left;margin-top:6px;">
+    <button class="btn-link" onclick="clearScores()">clear scores</button>
+  </div>
+
+  <!-- section 4: typing tips -->
+  <p class="section-header"><b><i>typing tips</i></b></p>
+  <div style="text-align:left;font-size:0.9em;line-height:1.7;">
+    <p style="margin:0.3em 0;">
+      <b>touch typing:</b> type without looking at the keyboard. each finger owns specific keys.
+      f and j have tactile bumps to orient your hands.
+    </p>
+    <p style="margin:0.3em 0;">
+      <b>home row:</b> return fingers to asdf / jkl; after every keystroke.
+      this is the foundation of muscle memory.
+    </p>
+    <p style="margin:0.3em 0;">
+      <b>accuracy first:</b> slow down until errors are near zero, then speed up.
+      fixing mistakes mid-word costs more time than the error itself.
+    </p>
+    <p style="margin:0.3em 0;">
+      <b>chunking:</b> read 2–3 words ahead. legal phrases like "proximate cause"
+      become single chunks with practice.
+    </p>
+    <p style="margin:0.5em 0 0.2em;">resources:</p>
+    <div class="resource-row">
+      <a href="https://www.keybr.com" target="_blank" rel="noopener">keybr.com</a>
+      <a href="https://monkeytype.com" target="_blank" rel="noopener">monkeytype.com</a>
+      <a href="https://www.typingclub.com" target="_blank" rel="noopener">typingclub.com</a>
+    </div>
+  </div>
+</center>
+
+<script src="passages.js"></script>
+<script src="typist.js"></script>
+</body>
+</html>
