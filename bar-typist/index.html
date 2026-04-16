@@ -1,8 +1,13 @@
-<!DOCTYPE html>
+\<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon_io/favicon-16x16.png">
+  <link rel="shortcut icon" href="/favicon_io/favicon.ico">
+  
   <title>bar typist</title>
   <link rel="stylesheet" href="style.css">
 </head>
@@ -11,7 +16,6 @@
   <h1>bar typist</h1>
   <p><small>type to study for the california bar exam.</small></p>
 
-  <!-- section 1: typing test -->
   <div id="test-section">
     <p id="passage-meta" style="font-size:0.82em;color:#666;margin-bottom:6px;text-align:left;"></p>
     <div id="passage-display"></div>
@@ -33,7 +37,6 @@
     </div>
   </div>
 
-  <!-- section 2: results -->
   <div id="results-section" class="hidden">
     <div id="results-grid">
       <div class="result-item">
@@ -65,14 +68,12 @@
     </div>
   </div>
 
-  <!-- section 3: high scores -->
   <p class="section-header"><b><i>high scores</i></b></p>
   <div id="scores-list" style="text-align:left;"></div>
   <div style="text-align:left;margin-top:6px;">
     <button class="btn-link" onclick="clearScores()">clear scores</button>
   </div>
 
-  <!-- section 4: typing tips -->
   <p class="section-header"><b><i>typing tips</i></b></p>
   <div style="text-align:left;font-size:0.9em;line-height:1.7;">
     <p style="margin:0.3em 0;">
@@ -98,6 +99,8 @@
       <a href="https://www.typingclub.com" target="_blank" rel="noopener">typingclub.com</a>
     </div>
   </div>
+
+  <p><img src="/favicon_io/apple-touch-icon.png" width="40" height="40" alt="logo" style="mix-blend-mode: multiply;"></p>
 </center>
 
 <script src="passages.js"></script>
