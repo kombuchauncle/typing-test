@@ -1,400 +1,626 @@
 const PASSAGES = {
-  "Contracts": [
+  "Business Associations": [
     {
-      title: "Offer and Acceptance",
-      source: "CA Bar Review",
-      text: "An offer is a manifestation of willingness to enter into a bargain, made in such a way that the offeree can reasonably understand that assent will conclude the deal. An offer must be definite and certain as to its essential terms, including the parties, subject matter, price, and time of performance. Acceptance requires the offeree to manifest assent to the terms of the offer in the manner invited or required. Under the mailbox rule, acceptance is effective upon dispatch if sent by reasonable means."
+      title: "Authority of Agent to Bind Principal",
+      source: "MEE Rule Statement (24.1%)",
+      text: "An agent has the authority to bind a principal to a contract when the agent acts with actual or apparent authority. Actual authority can be express (created by the principal's explicit words to the agent) or implied (based on the agent's reasonable understanding of the principal's objectives)."
     },
     {
-      title: "Consideration",
-      source: "CA Bar Review",
-      text: "Consideration requires a bargained-for exchange in which each party gives something of legal value. The detriment to the promisee need not be an economic loss; any act, forbearance, or promise that the promisee was not previously obligated to perform constitutes valid consideration. Courts will not inquire into the adequacy of consideration, only its existence. Past consideration — a benefit already conferred before the promise was made — does not support an enforceable contract because the exchange was not bargained for."
+      title: "Apparent Authority",
+      source: "MEE Rule Statement (24.1%)",
+      text: "Apparent authority arises when a third party reasonably believes the agent has authority to act on behalf of the principal, and that belief is traceable to the principal's manifestations (outward expressions or signs)."
     },
     {
-      title: "Breach and Damages",
-      source: "CA Bar Review",
-      text: "A material breach excuses the non-breaching party from further performance and entitles that party to seek damages. Expectation damages, the standard remedy in contract law, are designed to put the non-breaching party in the position they would have occupied had the contract been performed. Consequential damages are recoverable only if they were foreseeable at the time of contracting. A party also has a duty to mitigate, meaning they must take reasonable steps to reduce their losses following a breach."
-    }
-  ],
-  "Torts": [
-    {
-      title: "Negligence",
-      source: "CA Bar Review",
-      text: "To establish negligence, a plaintiff must prove that the defendant owed a duty of reasonable care, breached that duty by failing to act as a reasonable person would under the circumstances, and that the breach was the actual and proximate cause of the plaintiff's damages. The duty of care is generally owed to all foreseeable plaintiffs within the zone of danger created by the defendant's conduct. The standard is that of a reasonably prudent person acting under similar circumstances, not perfection."
+      title: "Contract Liability of the Partnership",
+      source: "MEE Rule Statement (20.4%)",
+      text: "A partnership is liable for contracts entered into on its behalf by a partner with authority to act for the partnership."
     },
     {
-      title: "Strict Products Liability",
-      source: "CA Bar Review",
-      text: "Under strict products liability, a manufacturer, distributor, or retailer who places a defective product into the stream of commerce is liable for physical harm caused by that defect without any showing of negligence. A product may be defective in its design, manufacture, or warnings. A manufacturing defect exists when a specific unit deviates from the intended design. A design defect exists when the entire product line is unreasonably dangerous as designed, evaluated under either the consumer expectations test or the risk-utility balancing test."
+      title: "Dissolution of the Partnership",
+      source: "MEE Rule Statement (18.5%)",
+      text: "Dissolution of a partnership is the commencement of the winding-up (liquidating assets and settling debts) process. Events that can cause dissolution include the express will of a partner to withdraw, the expiration of the term of the partnership, or the agreement of the partners."
     },
     {
-      title: "Battery and False Imprisonment",
-      source: "CA Bar Review",
-      text: "Battery is the intentional harmful or offensive contact with another person's body. The intent required is the intent to make contact, not the intent to harm. An offensive touching is one that would offend a reasonable person's sense of personal dignity. False imprisonment requires the intentional confinement of a person within fixed boundaries without consent, a means of escape, or legal authority. Confinement may be effected by physical barriers, force, threat of force, or the assertion of legal authority."
-    }
-  ],
-  "Constitutional Law": [
-    {
-      title: "Equal Protection",
-      source: "CA Bar Review",
-      text: "The Equal Protection Clause of the Fourteenth Amendment prohibits states from denying any person within their jurisdiction the equal protection of the laws. Courts apply strict scrutiny to classifications based on race, national origin, or alienage, and to laws that burden fundamental rights. Under strict scrutiny, the government must show that the law is necessary to achieve a compelling governmental interest. Intermediate scrutiny applies to gender and legitimacy classifications, requiring the law to be substantially related to an important government interest."
+      title: "Business Judgment/Duty of Care",
+      source: "MEE Rule Statement (18.5%)",
+      text: "The business judgment rule protects a corporation's directors from liability for their decisions if they acted on an informed basis, in good faith, and in the honest belief that the action was in the best interests of the company. A director has a duty to act with the care that a person in a like position would reasonably believe appropriate under similar circumstances."
     },
     {
-      title: "First Amendment Speech",
-      source: "CA Bar Review",
-      text: "The First Amendment protects freedom of speech from government infringement. Content-based restrictions on speech — those that target speech because of its message — are presumptively unconstitutional and subject to strict scrutiny. Content-neutral restrictions on the time, place, or manner of speech must serve a significant governmental interest, be narrowly tailored, and leave open alternative channels of communication. Prior restraints on speech carry a heavy presumption against their constitutional validity and are subject to immediate judicial review."
+      title: "Shareholder Derivative Claims",
+      source: "MEE Rule Statement (14.8%)",
+      text: "A shareholder may bring a derivative claim (a lawsuit brought by a shareholder on behalf of the corporation) against a third party (often a director) for harm suffered by the corporation. The shareholder must have been a shareholder at the time of the wrongful act, must fairly and adequately represent the interests of the corporation, and must first make a written demand on the board of directors to take action, unless such a demand would be futile (pointless because the board is biased or complicit)."
     },
     {
-      title: "Due Process",
-      source: "CA Bar Review",
-      text: "The Due Process Clause prohibits the government from depriving any person of life, liberty, or property without due process of law. Procedural due process requires notice and an opportunity to be heard before such a deprivation occurs. Substantive due process protects fundamental rights from government interference absent a compelling justification. Fundamental rights recognized under substantive due process include the right to marry, the right to privacy, and the right to direct the upbringing and education of one's children."
+      title: "General Partnership Formation",
+      source: "MEE Rule Statement (14.8%)",
+      text: "A general partnership is formed when two or more persons associate as co-owners to carry on a business for profit, regardless of their subjective intent. A sharing of profits from a business is prima facie (at first sight) evidence that a partnership exists."
     },
     {
-      title: "Standing",
-      source: "Feb 2023 Essay 2",
-      text: "In order for a party to bring suit, they must have standing. Standing requires injury — some harm suffered due to the actions of another party — causation, meaning the defendant caused the injury, and redressability, meaning there is a way for the court to remedy the harm. A party also lacks standing on ripeness grounds if there is no injury yet or the injury is merely anticipated and not yet concrete."
+      title: "Partner Duty of Loyalty",
+      source: "MEE Rule Statement (13.0%)",
+      text: "Partners in a general partnership owe a duty of loyalty to the partnership and the other partners. This duty requires a partner to account for any benefit derived from the partnership's business, to refrain from dealing with the partnership as an adverse party, and to refrain from competing with the partnership."
     },
     {
-      title: "Equal Protection and Facial Classification",
-      source: "Feb 2023 Essay 2",
-      text: "Equal protection is raised when a government act impedes on the rights of people in a way determined by facial classification. Facial classification exists when there is a clear distinction in who benefits from the legislation and who is disadvantaged. Groups bringing equal protection arguments must be an identifiable group that is fundamentally protected. If a group is being discriminated against, there must be a history of discrimination that the government is attempting to remedy."
-    }
-  ],
-  "Criminal Law": [
-    {
-      title: "Actus Reus and Mens Rea",
-      source: "CA Bar Review",
-      text: "Every crime requires both an actus reus — a voluntary physical act or legally cognizable omission — and a mens rea, the mental state specified by the crime. The Model Penal Code recognizes four levels of culpability: purpose, knowledge, recklessness, and negligence. A person acts purposely when it is their conscious object to engage in the conduct or cause the result. A person acts knowingly when they are aware that their conduct is of that nature or that a result is practically certain to follow."
+      title: "Conflict Interest Transactions",
+      source: "MEE Rule Statement (13.0%)",
+      text: "A conflict of interest transaction between a director and the corporation is a breach of the duty of loyalty unless the transaction is approved by a majority of disinterested directors after full disclosure, approved by a majority of disinterested shareholders after full disclosure, or is fair to the corporation at the time it was authorized."
     },
     {
-      title: "Homicide",
-      source: "CA Bar Review",
-      text: "Murder at common law is the unlawful killing of another with malice aforethought. Malice may be express — intent to kill — or implied by intent to cause grievous bodily harm, depraved heart recklessness, or felony murder. First degree murder requires premeditation and deliberation. Second degree murder covers all other malicious killings. Voluntary manslaughter reduces an intentional killing when the defendant acted in the heat of passion upon adequate provocation, before a reasonable cooling-off period had elapsed."
-    },
-    {
-      title: "Conspiracy",
-      source: "CA Essay Q1, Feb 2022",
-      text: "Conspiracy is an agreement between two or more people to commit a crime together with the intent to complete the crime planned. Conspiracy is usually complete once the parties agree and take a step in furtherance of this plan; mere preparation is sufficient. Once conspiracy is completed, co-conspirators are liable for the crime intended and any other foreseeable crimes committed by each other during the commission of the conspired act, unless they effectively withdraw."
-    },
-    {
-      title: "Conspiracy Withdrawal",
-      source: "CA Essay Q1, Feb 2022",
-      text: "Withdrawal from conspiracy itself is not possible once it is completed. However, withdrawal from subsequent crimes is possible by timely notice to all co-conspirators, letting them reconsider their choices to continue or withdraw, and immediately stopping any participation in the act. Conspiracy is an inchoate crime that, unlike attempt and solicitation, can be charged separately and does not merge into the crime conspired for. It is a specific intent crime requiring each conspirator to intentionally enter into the agreement."
-    },
-    {
-      title: "Felony Murder",
-      source: "CA Essay Q1, Feb 2022",
-      text: "A felony murder is a murder resulting from and during the commission of a felony crime — burglary, arson, robbery, rape, and kidnapping. It encompasses the period from the initiation of the crime until the felon reaches safety and has walked away from the scene. A felon is held responsible for any death resulting during the felony, satisfying the prima facie case of murder: the killing of another with intent or reckless disregard for human life."
-    },
-    {
-      title: "Larceny, Burglary, and Arson",
-      source: "July 2023 CA Essay Q4",
-      text: "Under common law, larceny is the trespassory taking and carrying away the property of another with the intent to permanently deprive the owner of the property. Burglary at common law is the breaking and entering of a dwelling at night with the intention to commit a felony within; modernly, statutes have eliminated the nighttime and dwelling requirements. Arson at common law is the burning of a dwelling of another; modernly, statutes have expanded this to cover any structure or building."
-    },
-    {
-      title: "Degrees of Homicide",
-      source: "July 2023 CA Essay Q4",
-      text: "Under common law, murder is the unlawful killing of a human being done with malice aforethought. First degree murder requires premeditation and deliberation. Second degree murder encompasses intent to kill, intent to cause grave bodily harm, reckless disregard for human life, and felony murder. Voluntary manslaughter is a killing done with adequate provocation or under imperfect self-defense. The defense of necessity is never available as a defense to any homicide charge."
-    },
-    {
-      title: "Attempt",
-      source: "CA Essay Q1, Feb 2022",
-      text: "Attempt is a specific intent crime, and it merges into the completed crime if the crime is carried out. Even though the attempted offense might be only a general intent or malice crime, attempt itself always requires specific intent — unless that specific intent is found, the person cannot be charged for attempt. Attempt also requires a substantial step toward the targeted offense."
-    }
-  ],
-  "Criminal Procedure": [
-    {
-      title: "Fourth Amendment Search and Seizure",
-      source: "CA Bar Review",
-      text: "The Fourth Amendment prohibits unreasonable searches and seizures and requires that warrants be supported by probable cause, particularly describe the place to be searched, and describe the persons or things to be seized. A search occurs when the government intrudes upon a person's reasonable expectation of privacy. Probable cause exists when the facts and circumstances known to the officer would lead a reasonable person to believe that evidence of a crime will be found in the place to be searched."
-    },
-    {
-      title: "Warrant Exceptions",
-      source: "CA Essay Q1, Feb 2022",
-      text: "Under the Fourth Amendment, individuals are protected from unreasonable searches and seizures. The general rule is that a police officer must have probable cause to obtain a search or arrest warrant before proceeding. However, there are exceptions to the warrant requirement: stop and frisk, plain view, the automobile exception, consent, exigent circumstances and hot pursuit, and search incident to a lawful arrest."
-    },
-    {
-      title: "Voluntariness of Statements",
-      source: "Feb Bar Exam 75, Feb 2023",
-      text: "A statement is involuntary if it is not a product of a rational intellect and free will. In cases of claimed psychological coercion, the question is whether the influences brought to bear upon the accused were such as to overbear the accused's will to resist and bring about confessions not freely determined. Absent some indication of coercive police activity, an admission or confession cannot be deemed involuntary within the Due Process Clause of the Fourteenth Amendment."
-    },
-    {
-      title: "Surrounding Circumstances Test",
-      source: "Feb Bar Exam 75, Feb 2023",
-      text: "In determining whether an accused's will is overborne, an examination must be made of all the surrounding circumstances including: the characteristics of the accused, such as the defendant's maturity, education, physical condition, and mental health and acuity; and the details of the interrogation that indicate coercion, including the length of the interrogation, the location, and whether the questioning was continuous."
-    },
-    {
-      title: "Exclusionary Rule and Miranda Custody and Interrogation",
-      source: "July 2023 CA Essay Q4",
-      text: "The Exclusionary Rule prohibits the introduction of evidence obtained in violation of one's Fourth, Fifth, or Sixth Amendment rights. Miranda rights are triggered only when a suspect is in custody and subject to interrogation. Custody means the person is not free to leave. Interrogation occurs when a question from a state actor is likely to elicit an incriminating response. A voluntary statement is not subject to Miranda and does not violate the Fifth Amendment privilege against self-incrimination."
-    },
-    {
-      title: "Sixth Amendment Right to Counsel Attachment",
-      source: "Feb 2024 Q4 Report",
-      text: "The Sixth Amendment guarantees a defendant the right to counsel once formally charged with a crime. While a defendant does not have the right to counsel during a pre-arraignment lineup or at an arraignment hearing, the right officially attaches once the defendant has been formally charged. Once formal charges are brought, any subsequent elicitation of incriminating statements from the defendant without counsel present raises a constitutional question under the Sixth Amendment."
-    },
-    {
-      title: "Miranda and Custodial Interrogation",
-      source: "CA Bar Review",
-      text: "The Fifth Amendment privilege against self-incrimination protects individuals from being compelled to testify against themselves in a criminal proceeding. Miranda v. Arizona requires law enforcement to advise suspects of their rights to silence and counsel before custodial interrogation. A suspect is in custody when, from the totality of the circumstances, a reasonable person would not feel free to terminate the encounter. A valid waiver of Miranda rights must be made voluntarily, knowingly, and intelligently."
-    }
-  ],
-  "Evidence": [
-    {
-      title: "California Relevance and Evidence Code 352",
-      source: "Feb 2024 Q4 Report",
-      text: "Under California law, evidence is relevant if its admission tends to prove or disprove a material fact of the situation at hand. The court may exercise its discretion to exclude relevant evidence if its probative value is substantially outweighed by the risk of unfair prejudice to the party against whom it is offered. Under Evidence Code 352, relevant evidence can also be excluded if it is needlessly cumulative, confusing to the jury, or designed to shock or upset the trier of fact."
-    },
-    {
-      title: "Hearsay Exceptions and Prior Inconsistent Statements",
-      source: "Feb 2024 Q4 Report",
-      text: "Under California law, hearsay is an out-of-court statement offered by a declarant for the truth of the matter asserted. Statements deemed hearsay are inadmissible unless an exception applies, such as statements made for medical diagnosis, spontaneous statements, statements made under the belief of imminent death, or statements by a party opponent. A prior inconsistent statement — where a witness's prior assertion contradicts their in-court testimony — may be used to attack credibility on cross-examination, provided the witness is available to explain or deny the inconsistency."
-    },
-    {
-      title: "Party Opponent Admissions and Attorney-Client Privilege",
-      source: "Q4 2022 Report",
-      text: "Statements by party opponents — statements made by one of the parties to the litigation — are classified as non-hearsay and are admissible. Unlike statements against interest, the declarant need not be unavailable. Attorney-client privilege applies to all communications made with clients in anticipation of litigation and survives the end of the attorney-client relationship. Work product prepared by an attorney in preparation for litigation is similarly privileged and may not be admitted against the client."
-    },
-    {
-      title: "Hearsay",
-      source: "CA Bar Review",
-      text: "Hearsay is an out-of-court statement offered to prove the truth of the matter asserted. Courts exclude hearsay because the declarant is not subject to cross-examination and the trier of fact cannot assess their credibility. A statement not offered for its truth — but rather for its effect on the listener, as a verbal act, or as circumstantial evidence of the declarant's state of mind — is not hearsay and is generally admissible. Numerous exceptions permit admission when adequate guarantees of trustworthiness exist."
-    },
-    {
-      title: "Relevance and Prejudice",
-      source: "CA Bar Review",
-      text: "Evidence is relevant if it has any tendency to make a fact of consequence to the action more or less probable than it would be without the evidence. The threshold for relevance is low, but even relevant evidence may be excluded if its probative value is substantially outweighed by the danger of unfair prejudice, confusion of the issues, or misleading the jury. Character evidence is generally inadmissible to prove conduct in conformity therewith, but may be admitted to show motive, intent, identity, or absence of mistake."
+      title: "Piercing the Corporate Veil",
+      source: "MEE Rule Statement (11.1%)",
+      text: "A court may pierce the corporate veil (disregard the corporation's separate legal identity) and hold shareholders personally liable for the corporation's obligations if the plaintiff can show that the corporation is an alter ego (a second self) or mere instrumentality (a tool) of the shareholder, that the shareholder is using the corporate form to perpetrate a fraud or injustice, and that an inequitable result will occur if the veil is not pierced."
     }
   ],
   "Civil Procedure": [
     {
-      title: "Personal Jurisdiction",
-      source: "CA Bar Review",
-      text: "A court may exercise personal jurisdiction over a defendant only if the defendant has sufficient contacts with the forum state such that requiring them to litigate there does not offend traditional notions of fair play and substantial justice. Specific jurisdiction arises when claims arise out of or relate to the defendant's forum contacts. General jurisdiction requires contacts so continuous and systematic as to render the defendant essentially at home in the forum. Consent and physical presence within the forum are also traditional bases for jurisdiction."
+      title: "Diversity Jurisdiction",
+      source: "MEE Rule Statement (33.3%)",
+      text: "A federal court has diversity jurisdiction over a civil action where the amount in controversy exceeds $75,000, exclusive of interest and costs, and there is complete diversity of citizenship (no plaintiff is a citizen of the same state as any defendant) between the plaintiffs and defendants."
     },
     {
-      title: "Subject Matter Jurisdiction",
-      source: "CA Bar Review",
-      text: "Federal courts have limited subject matter jurisdiction, requiring either a federal question or diversity of citizenship. Federal question jurisdiction exists when the plaintiff's claim arises under the Constitution, laws, or treaties of the United States. Diversity jurisdiction requires complete diversity — no plaintiff may be a citizen of the same state as any defendant — and an amount in controversy exceeding $75,000. A corporation is deemed a citizen of both its state of incorporation and the state where it maintains its principal place of business."
+      title: "Federal Question Jurisdiction",
+      source: "MEE Rule Statement (20.4%)",
+      text: "Federal courts have subject matter jurisdiction over cases 'arising under' the Constitution, laws, or treaties of the United States."
+    },
+    {
+      title: "Citizenship for Diversity Purposes",
+      source: "MEE Rule Statement (18.5%)",
+      text: "For diversity jurisdiction purposes, an individual is a citizen of the state of their domicile (permanent home). A corporation is a citizen of every state in which it is incorporated and of the one state where it has its principal place of business."
+    },
+    {
+      title: "Venue",
+      source: "MEE Rule Statement (14.8%)",
+      text: "Venue (the proper geographic district for a lawsuit) in a federal civil action is proper in a judicial district where any defendant resides, if all defendants reside in the same state; a judicial district in which a substantial part of the events or omissions giving rise to the claim occurred; or if neither of the first two apply, any judicial district in which any defendant is subject to the court's personal jurisdiction."
+    },
+    {
+      title: "Personal Jurisdiction",
+      source: "MEE Rule Statement (14.8%)",
+      text: "A court may exercise personal jurisdiction over a defendant if the state's long-arm statute (a law giving courts jurisdiction over out-of-state defendants) authorizes it and the exercise of jurisdiction comports (agrees with) with the Due Process Clause of the Fourteenth Amendment. Due process requires that the defendant have sufficient minimum contacts with the forum state such that the maintenance of the suit does not offend traditional notions of fair play and substantial justice."
+    },
+    {
+      title: "Supplemental Jurisdiction",
+      source: "MEE Rule Statement (14.8%)",
+      text: "A federal court with subject matter jurisdiction over a claim may exercise supplemental jurisdiction over other claims that are so related to the original claim that they form part of the same case or controversy."
+    },
+    {
+      title: "Specific Jurisdiction",
+      source: "MEE Rule Statement (13.0%)",
+      text: "Specific personal jurisdiction exists when the cause of action arises out of or relates to the defendant's purposeful contacts with the forum state."
+    },
+    {
+      title: "Motion for Summary Judgment",
+      source: "MEE Rule Statement (9.3%)",
+      text: "A court will grant a motion for summary judgment if the movant (the party making the motion) shows that there is no genuine dispute as to any material fact and the movant is entitled to judgment as a matter of law."
+    },
+    {
+      title: "Change of Venue",
+      source: "MEE Rule Statement (9.3%)",
+      text: "For the convenience of the parties and witnesses and in the interest of justice, a district court may transfer any civil action to any other district where it might have been brought."
+    },
+    {
+      title: "Removal",
+      source: "MEE Rule Statement (7.4%)",
+      text: "A defendant may remove a case from state court to the federal court for the district in which the state court action is pending if the federal court would have had original subject matter jurisdiction over the action."
+    }
+  ],
+  "Conflict of Laws": [
+    {
+      title: "Collateral Estoppel",
+      source: "MEE Rule Statement (9.3%)",
+      text: "Collateral estoppel (a doctrine preventing an issue from being re-litigated) prevents a party from relitigating an issue that was actually litigated, determined by a valid and final judgment, and was essential to the prior judgment."
+    },
+    {
+      title: "Erie Doctrine",
+      source: "MEE Rule Statement (9.3%)",
+      text: "In a diversity case, a federal court will apply its own procedural law, but must apply the substantive law of the state in which it sits. To determine if a law is substantive or procedural, the court will consider if the state law is outcome-determinative."
+    },
+    {
+      title: "Choice of Law (COL) Approaches",
+      source: "MEE Rule Statement (7.4%)",
+      text: "The First Restatement on Conflict of Laws uses a vested rights approach, where the law of the place of the last event necessary to create the cause of action governs. The Second Restatement applies the law of the state with the most significant relationship to the issue. The governmental interest analysis approach applies the law of the forum state unless another state has a greater interest in the outcome."
+    },
+    {
+      title: "Res Judicata",
+      source: "MEE Rule Statement (5.6%)",
+      text: "Res judicata (a doctrine preventing a claim from being re-litigated) bars a party from bringing a subsequent lawsuit on a claim that has been decided on the merits in a prior action between the same parties or their privies (persons with a mutual legal interest)."
+    },
+    {
+      title: "Express COL Clauses in Contracts",
+      source: "MEE Rule Statement (3.7%)",
+      text: "Parties to a contract may choose the law to govern their contractual rights and duties, provided the choice is not contrary to a fundamental policy of a state which has a materially greater interest than the chosen state in the determination of the particular issue."
+    },
+    {
+      title: "COL: Decedents' Estates",
+      source: "MEE Rule Statement (3.7%)",
+      text: "The law of the decedent's (the deceased person's) domicile at death governs the disposition of personal property, while the law of the situs (location) of the property governs the disposition of real property."
+    },
+    {
+      title: "COL: Substance vs. Procedure",
+      source: "MEE Rule Statement (3.7%)",
+      text: "In choice of law, procedural matters are governed by the law of the forum (the court where the suit is brought), while substantive matters are governed by the law of the state that has the most significant relationship to the issue."
+    },
+    {
+      title: "Full Faith and Credit",
+      source: "MEE Rule Statement (3.7%)",
+      text: "The Full Faith and Credit Clause of the U.S. Constitution requires that a state court give the same effect to a judgment of a sister state's court that the judgment would have in the rendering state, provided the rendering court had jurisdiction."
+    },
+    {
+      title: "COL: Contracts",
+      source: "MEE Rule Statement (1.9%)",
+      text: "In the absence of an effective choice of law clause, contract disputes are typically governed by the law of the place of contracting or the state with the most significant relationship to the transaction and the parties."
+    },
+    {
+      title: "COL: Torts",
+      source: "MEE Rule Statement (1.9%)",
+      text: "For tort cases, the traditional rule is to apply the law of the place of the injury. Modern approaches, like the Second Restatement, apply the law of the state with the most significant relationship to the occurrence and the parties."
+    }
+  ],
+  "Constitutional Law": [
+    {
+      title: "State Action Requirement",
+      source: "MEE Rule Statement (10.3%)",
+      text: "The protections of the U.S. Constitution generally apply only to government action, not the actions of private individuals or entities, unless the private actor is performing a traditional public function or there is significant state involvement with the private actor's conduct."
+    },
+    {
+      title: "State Sovereign Immunity",
+      source: "MEE Rule Statement (6.9%)",
+      text: "The Eleventh Amendment prohibits federal courts from hearing most private actions against state governments. This immunity does not extend to suits against state officials for injunctive relief or to suits where the state has consented to be sued."
+    },
+    {
+      title: "Dormant Commerce Clause",
+      source: "MEE Rule Statement (6.9%)",
+      text: "In the absence of federal regulation, a state or local government may regulate interstate commercial activity, but may not discriminate against or unduly burden interstate commerce."
+    },
+    {
+      title: "14th Amendment Equal Protection",
+      source: "MEE Rule Statement (6.9%)",
+      text: "The Equal Protection Clause of the Fourteenth Amendment prohibits states from denying any person within their jurisdiction the equal protection of the laws. Government classifications that treat similarly situated people differently are subject to different levels of scrutiny (standards of judicial review) depending on the classification and the rights involved."
+    },
+    {
+      title: "1st Amendment Free Speech",
+      source: "MEE Rule Statement (6.9%)",
+      text: "The First Amendment protects freedom of speech, but this protection is not absolute. The government may regulate speech based on its content only if the regulation is necessary to achieve a compelling government interest. Content-neutral regulations of the time, place, and manner of speech are subject to intermediate scrutiny."
+    },
+    {
+      title: "Time, Place, & Manner Restrictions",
+      source: "MEE Rule Statement (6.9%)",
+      text: "The government may impose reasonable restrictions on the time, place, and manner of speech in a public forum, provided the restrictions are content-neutral, narrowly tailored to serve a significant government interest, and leave open ample alternative channels for communication."
+    },
+    {
+      title: "Unprotected Speech",
+      source: "MEE Rule Statement (6.9%)",
+      text: "Certain categories of speech receive no First Amendment protection, including speech that incites imminent lawless action, fighting words, defamation, and obscenity."
+    },
+    {
+      title: "Exclusive State Powers",
+      source: "MEE Rule Statement (6.9%)",
+      text: "The Tenth Amendment reserves to the states powers not delegated to the federal government by the Constitution, nor prohibited by it to the states."
+    },
+    {
+      title: "Commerce Power",
+      source: "MEE Rule Statement (6.9%)",
+      text: "Congress has the power to regulate the channels and instrumentalities of interstate commerce, persons and things in interstate commerce, and activities that have a substantial effect on interstate commerce."
+    },
+    {
+      title: "Takings Clause (Eminent Domain)",
+      source: "MEE Rule Statement (3.4%)",
+      text: "The Fifth Amendment's Takings Clause, applicable to the states through the Fourteenth Amendment, prohibits the government from taking private property for public use without just compensation."
+    }
+  ],
+  "Contracts": [
+    {
+      title: "Common Law vs. UCC",
+      source: "MEE Rule Statement (41.4%)",
+      text: "The Uniform Commercial Code (UCC) governs contracts for the sale of goods. The common law governs all other types of contracts, including those for services and real estate."
+    },
+    {
+      title: "Requirements to Form a Contract",
+      source: "MEE Rule Statement (27.6%)",
+      text: "A valid contract requires an offer, acceptance, and consideration."
+    },
+    {
+      title: "Expectation Damages",
+      source: "MEE Rule Statement (17.2%)",
+      text: "Expectation damages are the standard measure of damages for breach of contract and are intended to put the non-breaching party in the same position they would have been in had the contract been fully performed."
+    },
+    {
+      title: "Terminating the Offer",
+      source: "MEE Rule Statement (13.8%)",
+      text: "An offer may be terminated by the offeror's revocation, the offeree's rejection or counteroffer, the lapse of time, or the death or incapacity of either party."
+    },
+    {
+      title: "The Offer",
+      source: "MEE Rule Statement (10.3%)",
+      text: "An offer is a manifestation of a present intent to contract, communicated to an identified offeree, containing definite and certain terms."
+    },
+    {
+      title: "Terms Required in the Offer",
+      source: "MEE Rule Statement (10.3%)",
+      text: "Under the common law, an offer must contain all essential terms, including the parties, subject matter, price, and quantity. Under the UCC, the only essential term is quantity."
+    },
+    {
+      title: "Acceptance",
+      source: "MEE Rule Statement (10.3%)",
+      text: "Acceptance is a manifestation of assent to the terms of the offer in the manner prescribed or authorized by the offer."
+    },
+    {
+      title: "Contract Modification",
+      source: "MEE Rule Statement (10.3%)",
+      text: "At common law, a modification of a contract requires new consideration. Under the UCC, an agreement modifying a contract for the sale of goods needs no consideration to be binding, but must be made in good faith."
+    },
+    {
+      title: "Mirror Image Rule & UCC 2-207",
+      source: "MEE Rule Statement (10.3%)",
+      text: "Under the common law's mirror image rule, the acceptance must be a mirror image of the offer. UCC § 2-207 provides that for the sale of goods, an acceptance with additional or different terms is still an acceptance, and the new terms may become part of the contract depending on whether the parties are merchants."
+    },
+    {
+      title: "Anticipatory Repudiation",
+      source: "MEE Rule Statement (10.3%)",
+      text: "Anticipatory repudiation occurs when a party to a contract, prior to the time set for performance, unequivocally indicates that he will not perform when the time comes. The non-repudiating party may sue for damages immediately, wait to sue, treat the contract as discharged, or urge the other party to perform."
+    }
+  ],
+  "Criminal Law & Procedure": [
+    {
+      title: "Mental State Requirements",
+      source: "MEE Rule Statement (17.2%)",
+      text: "For a conviction, the prosecution must prove that the defendant had the requisite mental state, or mens rea (guilty mind), for the crime. The common law mental states are specific intent, general intent, and malice. The Model Penal Code proposes four mental states: purposely, knowingly, recklessly, and negligently."
+    },
+    {
+      title: "Miranda Analysis",
+      source: "MEE Rule Statement (17.2%)",
+      text: "Law enforcement officers must provide Miranda warnings to a suspect before engaging in a custodial interrogation (questioning after being taken into custody). A suspect is in custody if a reasonable person would not feel free to leave. An interrogation is any conduct by the police that they should know is reasonably likely to elicit an incriminating response."
+    },
+    {
+      title: "4th Amendment Searches",
+      source: "MEE Rule Statement (13.8%)",
+      text: "A search for Fourth Amendment purposes occurs when the government intrudes upon a person's reasonable expectation of privacy or physically intrudes upon a constitutionally protected area. A search is generally unreasonable if it is conducted without a warrant."
+    },
+    {
+      title: "Larceny/Embezzlement",
+      source: "MEE Rule Statement (10.3%)",
+      text: "Larceny is the trespassory (wrongful) taking and carrying away of the personal property of another with the intent to permanently deprive the owner thereof. Embezzlement is the fraudulent conversion of the property of another by one who is in lawful possession of the property."
+    },
+    {
+      title: "Common Law Murder",
+      source: "MEE Rule Statement (6.9%)",
+      text: "Common law murder is the unlawful killing of a human being with malice aforethought (the intent to kill or cause serious harm). Malice can be established by showing an intent to kill, an intent to inflict great bodily injury, a reckless indifference to an unjustifiably high risk to human life (a 'depraved heart'), or an intent to commit a felony (felony murder)."
+    },
+    {
+      title: "Voluntary Manslaughter",
+      source: "MEE Rule Statement (6.9%)",
+      text: "Voluntary manslaughter is an intentional killing committed in the heat of passion upon adequate provocation."
+    },
+    {
+      title: "Involuntary Manslaughter",
+      source: "MEE Rule Statement (6.9%)",
+      text: "Involuntary manslaughter is an unintentional killing committed with criminal negligence or during the commission of an unlawful act that is not a felony."
+    },
+    {
+      title: "1st & 2nd Degree Murder",
+      source: "MEE Rule Statement (6.9%)",
+      text: "First-degree murder is typically defined as a deliberate and premeditated killing or a killing that occurs during the commission of an inherently dangerous felony. Second-degree murder is a killing with malice aforethought that does not qualify as first-degree murder."
+    },
+    {
+      title: "Felony Murder Rule",
+      source: "MEE Rule Statement (6.9%)",
+      text: "The felony murder rule provides that a person is guilty of murder if a death results from the commission of an inherently dangerous felony."
+    },
+    {
+      title: "Causation in Homicide",
+      source: "MEE Rule Statement (6.9%)",
+      text: "The defendant's act must be both the actual cause (but-for cause) and the proximate cause of the victim's death. Proximate cause is a legal determination that the defendant should be held criminally responsible for the death."
+    }
+  ],
+  "Evidence": [
+    {
+      title: "Hearsay",
+      source: "MEE Rule Statement (34.5%)",
+      text: "Hearsay is an out-of-court statement offered in evidence to prove the truth of the matter asserted. It is generally inadmissible unless it falls under an exception or exclusion."
+    },
+    {
+      title: "Non-Hearsay",
+      source: "MEE Rule Statement (34.5%)",
+      text: "Statements that are not offered to prove the truth of the matter asserted are not hearsay. This includes statements offered to show their effect on the listener, legally operative facts, and circumstantial evidence of the declarant's (the person who made the statement) state of mind."
+    },
+    {
+      title: "Logical Relevance",
+      source: "MEE Rule Statement (27.6%)",
+      text: "Evidence is relevant if it has any tendency to make a fact of consequence to the determination of the action more or less probable than it would be without the evidence."
+    },
+    {
+      title: "Character Evidence",
+      source: "MEE Rule Statement (24.1%)",
+      text: "Evidence of a person's character or character trait is generally inadmissible to prove that on a particular occasion the person acted in accordance with the character or trait. However, there are exceptions in criminal cases and when character is an essential element of a charge, claim, or defense."
+    },
+    {
+      title: "M.I.M.I.C.",
+      source: "MEE Rule Statement (24.1%)",
+      text: "Evidence of a defendant's prior bad acts or crimes is not admissible to prove the defendant's character in order to show action in conformity therewith. However, such evidence may be admissible for other purposes, such as to prove Motive, Intent, absence of Mistake, Identity, or Common plan or scheme."
+    },
+    {
+      title: "Unavailability Requirement",
+      source: "MEE Rule Statement (10.3%)",
+      text: "Certain hearsay exceptions require the declarant to be unavailable to testify, such as former testimony, statements against interest, and dying declarations. A declarant is unavailable if they are exempt from testifying due to privilege, refuse to testify, testify to not remembering the subject matter, cannot be present due to death or illness, or are absent from the hearing and the proponent has been unable to procure their attendance."
+    },
+    {
+      title: "Present Sense Impression",
+      source: "MEE Rule Statement (10.3%)",
+      text: "A statement describing or explaining an event or condition made while the declarant was perceiving the event or condition, or immediately thereafter, is an exception to the hearsay rule."
+    },
+    {
+      title: "Excited Utterance",
+      source: "MEE Rule Statement (10.3%)",
+      text: "A statement relating to a startling event or condition, made while the declarant was under the stress of excitement that it caused, is an exception to the hearsay rule."
+    },
+    {
+      title: "Medical Diagnosis or Treatment",
+      source: "MEE Rule Statement (10.3%)",
+      text: "A statement made for—and reasonably pertinent to—medical diagnosis or treatment and describing medical history, or past or present symptoms, pain, or sensations, or the inception or general character of the cause or external source thereof, is an exception to the hearsay rule."
+    },
+    {
+      title: "Impeachment",
+      source: "MEE Rule Statement (6.9%)",
+      text: "A witness's credibility may be attacked, or impeached (discredited), by various means, including showing bias, prior inconsistent statements, bad character for truthfulness, or sensory defects."
+    }
+  ],
+  "Family Law": [
+    {
+      title: "Property Division at Divorce",
+      source: "MEE Rule Statement (22.2%)",
+      text: "Most states follow the principle of equitable distribution (a fair, but not necessarily equal, division of marital property). Marital property is generally defined as all property acquired by either spouse during the marriage. Separate property, such as property owned before the marriage or acquired by gift or inheritance, is not subject to division."
+    },
+    {
+      title: "Child Custody: Best Interests",
+      source: "MEE Rule Statement (16.7%)",
+      text: "In making a determination of child custody, the court's primary consideration is the best interests of the child. Factors considered include the wishes of the parents, the wishes of the child (if of sufficient age and maturity), the interaction of the child with parents and siblings, the child's adjustment to home, school, and community, and the mental and physical health of all individuals involved."
+    },
+    {
+      title: "Premarital Contracts",
+      source: "MEE Rule Statement (13.0%)",
+      text: "A premarital (or antenuptial) agreement is a contract entered into by prospective spouses in contemplation of marriage. It is enforceable if it is in writing, signed by both parties, and entered into voluntarily after full and fair disclosure of each party's assets."
+    },
+    {
+      title: "Marital Action Jurisdiction",
+      source: "MEE Rule Statement (13.0%)",
+      text: "For a court to have jurisdiction to grant a divorce, at least one of the spouses must be domiciled in the state. For a court to have jurisdiction to divide marital property or order spousal support, it must have personal jurisdiction over the defendant spouse."
+    },
+    {
+      title: "Common Law Marriage",
+      source: "MEE Rule Statement (9.3%)",
+      text: "A common law marriage is established when a couple holds themselves out to the public as married, cohabitates, and has the present intent to be married."
+    },
+    {
+      title: "Modification of Child Support",
+      source: "MEE Rule Statement (9.3%)",
+      text: "A child support order may be modified upon a showing of a substantial and continuing change in circumstances that makes the original order unreasonable."
+    },
+    {
+      title: "Modification of Child Custody",
+      source: "MEE Rule Statement (9.3%)",
+      text: "A child custody order may be modified only upon a showing of a substantial and material change in circumstances, and the modification must be in the best interests of the child."
+    },
+    {
+      title: "Modification of Spousal Support",
+      source: "MEE Rule Statement (5.6%)",
+      text: "A spousal support order may be modified upon a showing of a substantial and material change in circumstances. Some states do not permit modification of spousal support if the original decree does not so provide."
+    },
+    {
+      title: "Child Support Calculation",
+      source: "MEE Rule Statement (5.6%)",
+      text: "States have adopted guidelines for calculating child support, which are typically based on the income of the parents and the number of children. The court may deviate from the guidelines if application would be unjust or inappropriate."
+    },
+    {
+      title: "Establishing Paternity/Legitimation",
+      source: "MEE Rule Statement (5.6%)",
+      text: "A child born to a married woman is presumed to be the child of her husband. Paternity of a child born to an unmarried woman may be established by acknowledgment of the father or by a court proceeding."
     }
   ],
   "Real Property": [
     {
+      title: "Deed Types & Merger",
+      source: "MEE Rule Statement (10.3%)",
+      text: "The three main types of deeds are the general warranty deed, the special warranty deed, and the quitclaim deed. Under the doctrine of merger (absorption of one thing into another), the contract for the sale of land merges into the deed at closing, and the buyer's rights are thereafter governed by the deed, not the contract."
+    },
+    {
+      title: "Recording Statutes & Notice",
+      source: "MEE Rule Statement (10.3%)",
+      text: "Recording statutes determine the priority of competing interests in real property. A notice statute protects a subsequent bona fide purchaser for value who takes without notice of a prior interest. A race-notice statute protects a subsequent bona fide purchaser for value who takes without notice and records first. A race statute protects a subsequent purchaser who records first, regardless of notice."
+    },
+    {
+      title: "Leasehold Interest",
+      source: "MEE Rule Statement (6.9%)",
+      text: "A leasehold is an estate in land under which the tenant has a present possessory interest in the leased premises and the landlord has a future interest (a reversion). The main types of leaseholds are the tenancy for years, the periodic tenancy, the tenancy at will, and the tenancy at sufferance."
+    },
+    {
+      title: "Assignments",
+      source: "MEE Rule Statement (6.9%)",
+      text: "An assignment is the transfer by a tenant of their entire remaining interest in the lease. The assignee is in privity of estate (a legal relationship based on a common interest in the same property) with the landlord and is liable for the covenants in the original lease that run with the land."
+    },
+    {
+      title: "Abandonment",
+      source: "MEE Rule Statement (6.9%)",
+      text: "If a tenant abandons the leased premises, the landlord may accept the surrender and terminate the lease, or re-let the premises on the tenant's behalf and hold the tenant liable for any deficiency."
+    },
+    {
+      title: "Duty to Mitigate",
+      source: "MEE Rule Statement (6.9%)",
+      text: "In a majority of states, a landlord has a duty to mitigate damages by making reasonable efforts to re-let the premises if a tenant abandons."
+    },
+    {
+      title: "Termination of an Easement",
+      source: "MEE Rule Statement (6.9%)",
+      text: "An easement may be terminated by estoppel, necessity, destruction of the servient tenement (the burdened land), condemnation (government taking), release, abandonment, merger, or prescription (adverse use over time)."
+    },
+    {
+      title: "Implied Warranty Fitness/Suitability",
+      source: "MEE Rule Statement (6.9%)",
+      text: "In most jurisdictions, a builder of a new home impliedly warrants that the home is fit for its intended purpose and constructed in a workmanlike manner."
+    },
+    {
       title: "Adverse Possession",
-      source: "CA Bar Review",
-      text: "A person may acquire title to land through adverse possession by maintaining open, notorious, actual, exclusive, hostile, and continuous possession of the property for the statutory period. Hostility does not require ill will but only possession without the owner's permission. The claimant's use must be the type that a reasonable true owner would make of the land. Tacking allows a claimant to add their period of possession to that of a predecessor in privity of possession to satisfy the statutory period."
+      source: "MEE Rule Statement (6.9%)",
+      text: "A person can acquire title to real property by adverse possession if their possession is continuous, open and notorious, actual, and hostile for the statutory period."
     },
     {
-      title: "Joint Tenancy and Tenancy in Common",
-      source: "CA Bar Review",
-      text: "A joint tenancy requires four unities: time, title, interest, and possession. All joint tenants must acquire their interests at the same time, by the same instrument, in equal shares, with equal rights to possession. The distinguishing feature of joint tenancy is the right of survivorship — upon the death of one joint tenant, the surviving tenants take the deceased's share automatically. A tenancy in common carries no right of survivorship; each tenant may freely transfer their fractional interest by deed or devise."
+      title: "Shelter Rule",
+      source: "MEE Rule Statement (6.9%)",
+      text: "A person who takes real property from a bona fide purchaser (one who buys in good faith) will prevail against any interest that the transferor-bona fide purchaser would have prevailed against. This is true even if the person taking the property had notice of the prior interest."
     }
   ],
-  "Community Property": [
+  "Torts": [
     {
-      title: "Characterization of Property",
-      source: "CA Bar Review",
-      text: "Under California's community property system, property acquired during marriage by either spouse through labor or effort is presumed to be community property, equally owned by both spouses. Property owned before marriage or acquired during marriage by gift, devise, or bequest remains the separate property of the acquiring spouse. The transmutation doctrine allows spouses to change the character of property by express written agreement. Commingling of separate and community funds creates a presumption that the entire fund is community property, rebuttable by tracing."
-    },
-    {
-      title: "Management and Division",
-      source: "CA Bar Review",
-      text: "Each spouse has equal management and control over community property during marriage. Either spouse may act alone in ordinary transactions but both must join in transactions affecting the family home, gifts of community property, or transactions that substantially impair the other spouse's interest. Upon dissolution of marriage, the court must divide community property equally absent a valid agreement or other recognized exception. Earnings and business interests acquired through the labor and skill of either spouse during marriage constitute community property."
-    },
-    {
-      title: "Community Property Defined",
-      source: "CA Essay 5, July 2021",
-      text: "California is a community property state. Property acquired during marriage is Community Property. Property acquired before or after marriage via bequest, gift, or devise is considered Separate Property. Property can be classified by source, characterization of property, or special presumptions."
-    },
-    {
-      title: "Transmutation",
-      source: "CA Essay 5, July 2021",
-      text: "Transmutation is an agreement between two parties to change the characterization of the property. After 1985, it must be in signed writing by the adversely affected spouse, unless it is for an item of insubstantial value."
-    },
-    {
-      title: "Community Property Presumption",
-      source: "Comm Prop Essay, Feb 2022",
-      text: "California is a community property state, which means that all property acquired prior to marriage is considered separate property, and all property acquired during the marriage is considered to be community property unless it was from a bequest, descent, the rents and profits of separate property, or when separate property is used to purchase property directly during the marriage. Community property is divided in kind at the time of judgment unless an exception applies."
-    },
-    {
-      title: "Direct Tracing and Exhaustion Method",
-      source: "Comm Prop Essay, Feb 2022",
-      text: "A direct tracing can be accomplished by showing that separate property flowed directly from one account into another that was not commingled with community property funds. When a commingled account exists, the separate property claim can instead be proven through the exhaustion method by showing that the community funds therein were insufficient to cover the community expenses at the time those expenses arose."
-    },
-    {
-      title: "Spousal Fiduciary Duty",
-      source: "Comm Prop Essay, Feb 2022",
-      text: "The Family Code requires that married spouses have a fiduciary duty to one another. This duty requires good faith and fair dealing, and to act as a reasonable person in making investment decisions. One spouse's poor investment alone is not enough to breach this duty; there must be reckless negligence on the part of the breaching spouse."
-    },
-    {
-      title: "Separation and Post-Separation Debt",
-      source: "Comm Prop Essay, Feb 2022",
-      text: "The court defines separation as at least one party's intent to abandon the marriage without hope of reconciliation. When a debt is incurred by a party post-separation, it may be considered community in nature only if it was used for the benefit of the community or to improve community property."
-    },
-    {
-      title: "Equal Management and Community Debts",
-      source: "Feb 2024 CA Essay Q1",
-      text: "Married spouses have equal management power over community finances. Either spouse may purchase property or apply for a loan without the other spouse's knowledge, and debts incurred during the marriage are presumed to be community property. However, when one spouse commits a criminal act such as forgery in obtaining a loan, the innocent spouse is not liable for debts arising from that criminal activity."
-    },
-    {
-      title: "Spousal Fiduciary Duty and Remedy",
-      source: "Feb 2024 CA Essay Q1",
-      text: "Spouses owe each other the highest fiduciary duty, requiring honesty, good faith, and full disclosure of their financial situation. When one spouse breaches this duty, the court may assign the entirety of the undisclosed asset or liability to the breaching spouse. Marital community property ends at separation, which occurs when at least one spouse intends to end the marriage and does not return, even without a formal divorce filing."
-    }
-  ],
-  "Wills and Trusts": [
-    {
-      title: "Testamentary Capacity",
-      source: "CA Bar Review",
-      text: "A testator must have testamentary capacity at the time of execution: they must be at least 18 years old and of sound mind, meaning they understand the nature of the testamentary act, the nature and extent of their property, the natural objects of their bounty, and how these elements relate to form a coherent plan of distribution. A diagnosis of dementia does not automatically preclude capacity if the testator had a lucid interval at execution. The capacity required for a will is less demanding than that required for other legal acts."
-    },
-    {
-      title: "Express Trust Formation",
-      source: "CA Bar Review",
-      text: "A valid express trust requires a settlor with capacity, a present manifestation of intent to create a trust, a definite beneficiary or valid charitable purpose, identifiable trust property, and a trustee. A trustee owes fiduciary duties of loyalty and prudence to the beneficiaries. The duty of loyalty requires the trustee to administer the trust solely in the interest of the beneficiaries and to avoid conflicts of interest. Under the prudent investor standard, the trustee must manage trust assets as a prudent investor would, considering the purposes and circumstances of the trust."
-    },
-    {
-      title: "Attested Will Requirements",
-      source: "CA Essay 5, July 2021",
-      text: "A valid will requires a signed writing signed by the testator with present intent and capacity in the joint presence of two disinterested witnesses who sign during the testator's lifetime."
-    },
-    {
-      title: "Disinterested Witnesses",
-      source: "CA Essay 5, July 2021",
-      text: "The two disinterested witnesses must be in the presence of the testator when he signs or when the testator acknowledges his signature to them. The witnesses must understand they are signing a will, but do not need to know its content. Additionally, the witnesses must sign during the testator's lifetime, but both do not need to sign in his presence or each other."
-    },
-    {
-      title: "Harmless Error",
-      source: "CA Essay 5, July 2021",
-      text: "Under California law, if the witness requirement is not met, the will may still be admitted to probate if there is clear and convincing evidence that the testator intended it to be his will."
-    },
-    {
-      title: "Holographic Will",
-      source: "CA Essay 5, July 2021",
-      text: "A holographic will requires signature and material provisions in the testator's own handwriting. There is no witness requirement, but a date is required."
-    },
-    {
-      title: "Omitted Child",
-      source: "CA Essay 5, July 2021",
-      text: "An omitted child can receive an intestate share if born or adopted after the will, unless intentionally omitted, provided for outside the will, or the other parent receives a substantial part of the estate."
-    },
-    {
-      title: "Omitted Spouse",
-      source: "CA Essay 5, July 2021",
-      text: "An omitted spouse can receive an intestate share if married after the will was executed, unless intentionally omitted, provided for outside the will, or the spouse has signed a valid waiver."
-    }
-  ],
-  "Professional Responsibility": [
-    {
-      title: "CRPC vs ABA on Confidentiality",
-      source: "Q4 2022 Report",
-      text: "Under both the CRPC and ABA rules, an attorney has a duty of confidentiality. In California, a lawyer may reveal client confidences only to prevent a criminal act likely to result in substantial bodily harm or death. The ABA recognizes the same exception but also permits disclosure to prevent damage to the financial interests of another when the lawyer's services are being used to further that harm, and permits disclosure when the client consents."
-    },
-    {
-      title: "Mandatory and Permissive Withdrawal",
-      source: "Q4 2022 Report",
-      text: "In California, withdrawal is mandatory where the attorney has probable cause to believe the client is using their services to harass or maliciously injure another, where representation would violate the CRPC, where a mental or physical impairment renders representation unreasonably difficult, or where the client has discharged the attorney. The ABA aligns on the latter three grounds and additionally permits permissive withdrawal when the attorney finds the client's actions to be morally reprehensible."
-    },
-    {
-      title: "Duty of Confidentiality",
-      source: "CA Bar Review",
-      text: "An attorney owes a duty of confidentiality to clients regarding all information relating to the representation, regardless of the source or whether the client has requested secrecy. This duty is broader than the attorney-client privilege and persists after the representation ends. The attorney may reveal confidential information only with the client's informed consent, when impliedly authorized to carry out the representation, or when disclosure is required or permitted by law. California permits — but does not require — disclosure to prevent reasonably certain death or substantial bodily harm."
-    },
-    {
-      title: "Conflicts of Interest",
-      source: "CA Bar Review",
-      text: "A lawyer must not represent a client if the representation involves a concurrent conflict of interest, which exists when representation of one client is directly adverse to another client, or when there is a significant risk that the representation will be materially limited by the lawyer's responsibilities to another client or the lawyer's own interests. Concurrent conflicts may be waived by informed written consent if the lawyer reasonably believes they can provide competent and diligent representation to each affected client and applicable law does not prohibit the waiver."
-    },
-    {
-      title: "Criminal Contingency Fees and Client Gifts",
-      source: "Feb 2024 Q3 Report",
-      text: "It is an ethical violation under both California and ABA rules for an attorney to base compensation on a contingency fee in a criminal case. A lawyer can never be paid on a contingency for services rendered in criminal matters. Additionally, under both California and ABA Rules, lawyers are not allowed to accept large gifts in connection with their services, although small gifts as a token of appreciation for representation or referrals tend to be acceptable."
-    },
-    {
-      title: "Witness and Expert Witness Compensation",
-      source: "Feb 2024 Q3 Report",
-      text: "Under California and ABA Rules, lay witnesses may be reasonably compensated for time spent testifying, typically by reimbursement for travel and lodging rather than a direct fee. Expert witnesses, by contrast, may be reasonably compensated for their time and appearance at trial. There are no bright-line rules about how much an expert should be compensated, as it varies by field and level of expertise."
-    },
-    {
-      title: "Supervising Subordinates and Duty of Candor",
-      source: "Q2 2021 Report July",
-      text: "Lawyers are responsible to properly supervise subordinates, whether they be junior attorneys or office staff, and are ultimately responsible for the subordinate's actions. A lawyer also has a duty of honesty and candor to opposing counsel and to the court. When a conflict or error arises — including one caused by a supervised employee — the attorney must disclose it to the affected parties rather than concealing it out of personal or professional loyalty."
-    },
-    {
-      title: "Conflict of Interest and Withdrawal",
-      source: "Q2 2021 Report July",
-      text: "When an attorney believes or knows that she has a conflict related to the case, she must disclose it to her client and resolve the issue by either withdrawing or obtaining written consent. California requires written consent by the client to continue representation despite a conflict. A lawyer may attempt to withdraw if it would not materially impact the client's case; if withdrawal would be materially harmful, a court must resolve the situation."
-    },
-    {
-      title: "Duty of Competence, Communication, and Loyalty",
-      source: "Q2 2021 Report July",
-      text: "An attorney has a duty to represent her client with the knowledge and skill required for the matter. A lawyer also has a duty to communicate with her client regarding decisions, settlements, and information material to the case. Every lawyer owes a duty of loyalty to her client and must represent the case with zeal. A lawyer has a corresponding duty to keep client information and case evidence secure to prevent loss or damage."
-    },
-    {
-      title: "Duty of Candor and Personal Opinion",
-      source: "Feb 2024 Q3 Report",
-      text: "A lawyer may ask the court to find their client not guilty, but may not express a personal opinion about the merits of the case or the credibility of witnesses. Conditioning an expert witness's compensation on changing their opinion is a clear ethical violation — it directs the witness to commit perjury and breaches the lawyer's duty of candor to the tribunal."
-    }
-  ],
-  "Business Associations": [
-    {
-      title: "General Partnership Formation and Joint Liability",
-      source: "July 2023 CA Essay Q1",
-      text: "A general partnership is formed when two or more persons come together to form a business for profit. No formal filing with the state is required for a partnership to exist. In a partnership, all partners are jointly and severally liable for the torts and damages to third persons incurred by the partnership. A partner is personally liable for their own torts, but if the tort arises from partnership activity, the other partners share liability jointly and severally."
+      title: "Negligence Elements",
+      source: "MEE Rule Statement (41.4%)",
+      text: "To establish a prima facie (on its face) case for negligence, a plaintiff must prove that the defendant owed a duty of care to the plaintiff, the defendant breached that duty, the breach was the actual and proximate cause of the plaintiff's injury, and the plaintiff suffered damages."
     },
     {
       title: "Respondeat Superior",
-      source: "July 2023 CA Essay Q1",
-      text: "Under the doctrine of respondeat superior, an employer is vicariously liable for torts committed by an employee acting within the scope of employment. The employer has authority and control over the employee, and when the employee causes harm during the work hour or in furtherance of the employer's business, the employer is responsible for the resulting damages. Whether an employee was acting within the scope of employment turns on the nature of the activity and the employer's policies."
+      source: "MEE Rule Statement (27.6%)",
+      text: "Under the doctrine of respondeat superior (let the master answer), an employer is vicariously liable for the torts of an employee committed within the scope of employment."
     },
     {
-      title: "Agency Authority and Partnership Liability for Agent Torts",
-      source: "July 2023 CA Essay Q1",
-      text: "A person may be an agent of a partnership when an agency is formed through apparent or implied authority. An implied agency exists when the partnership evidently implies that the person is acting on its behalf. Apparent authority arises when the agent works on behalf of the partnership, the partnership is aware of the relationship, and third parties reasonably believe the agent has authority. When an agent commits a tort within the scope of the agency, the partnership — not the agent — bears liability."
+      title: "The Reasonable Person Standard",
+      source: "MEE Rule Statement (13.8%)",
+      text: "In a negligence action, the defendant's conduct is measured against the standard of a reasonably prudent person under the same or similar circumstances."
     },
     {
-      title: "Agency Authority",
-      source: "CA Bar Review",
-      text: "Agency is a consensual fiduciary relationship in which the agent agrees to act on behalf of and subject to the control of the principal. An agent has actual authority to bind the principal when the principal expressly or impliedly communicates to the agent that the agent may act. Apparent authority arises when the principal's manifestations to a third party reasonably lead that party to believe the agent has authority to act. A principal is vicariously liable for torts committed by an agent acting within the scope of the agency relationship."
+      title: "Strict Liability",
+      source: "MEE Rule Statement (13.8%)",
+      text: "A defendant is strictly liable for injuries caused by an abnormally dangerous activity or by a wild animal. In a products liability case, a manufacturer, distributor, or seller of a defective product is strictly liable for harm caused by the defect."
     },
     {
-      title: "Piercing the Corporate Veil",
-      source: "CA Bar Review",
-      text: "The corporate form generally shields shareholders from liability for corporate obligations; creditors may look only to corporate assets. This limited liability may be set aside — the corporate veil pierced — when the corporate form is used to perpetrate fraud, when the corporation is inadequately capitalized, or when corporate formalities are not observed such that the corporation is the alter ego of its shareholders. In California, courts consider the unity of interest between shareholder and corporation and whether adherence to the corporate form would sanction fraud or promote injustice."
+      title: "Negligence Per Se",
+      source: "MEE Rule Statement (13.8%)",
+      text: "An unexcused violation of a statute that establishes a specific standard of care constitutes negligence per se (negligence in itself) if the plaintiff is within the class of persons intended to be protected by the statute and the harm is of the type the statute was intended to prevent."
+    },
+    {
+      title: "Actual & Proximate Cause",
+      source: "MEE Rule Statement (13.8%)",
+      text: "Actual cause, or cause-in-fact, is established if the plaintiff's injury would not have occurred but for the defendant's negligent conduct. Proximate cause, or legal cause, requires that the plaintiff's injury was a foreseeable result of the defendant's negligent conduct."
+    },
+    {
+      title: "Eggshell Plaintiff Rule",
+      source: "MEE Rule Statement (10.3%)",
+      text: "A defendant is liable for all harm that the plaintiff suffers as a result of the defendant's tortious conduct, even if the plaintiff suffers from a pre-existing condition that makes the harm greater than a normal person would have suffered."
+    },
+    {
+      title: "Defective Products",
+      source: "MEE Rule Statement (10.3%)",
+      text: "A product may be defective due to a flaw in its manufacturing, a defective design, or an inadequate warning."
+    },
+    {
+      title: "Comparative Fault",
+      source: "MEE Rule Statement (10.3%)",
+      text: "In a comparative fault jurisdiction, the plaintiff's recovery is reduced by the percentage of their own negligence. In a modified comparative fault jurisdiction, the plaintiff's recovery is barred if their negligence exceeds a certain threshold (usually 50%)."
+    },
+    {
+      title: "Affirmative Duty to Act",
+      source: "MEE Rule Statement (10.3%)",
+      text: "Generally, there is no affirmative duty to act to help a person in peril. However, such a duty may arise from a special relationship between the parties, or when the defendant created the danger."
     }
   ],
-  "Remedies": [
+  "Trusts & Estates": [
     {
-      title: "Injunctive Relief",
-      source: "CA Bar Review",
-      text: "A plaintiff seeking a permanent injunction must demonstrate success on the merits, that they will suffer irreparable harm absent relief, that the balance of hardships tips in their favor, and that the public interest would not be disserved by the injunction. Injunctive relief is an equitable remedy available only when legal remedies are inadequate. Irreparable harm exists when the injury cannot be adequately compensated by money damages, typically because the harm is ongoing, impossible to calculate, or threatens unique property interests."
+      title: "Intestate Succession",
+      source: "MEE Rule Statement (18.5%)",
+      text: "When a person dies without a will, their property passes to their heirs according to the state's intestacy statute (laws for people who die without a will). The surviving spouse and descendants are typically the primary beneficiaries."
     },
     {
-      title: "Restitution and Unjust Enrichment",
-      source: "CA Bar Review",
-      text: "Restitution is an equitable remedy designed to prevent unjust enrichment by requiring a party to disgorge benefits wrongfully obtained or retained at another's expense. Unlike compensatory damages, which focus on the plaintiff's loss, restitution focuses on the defendant's gain. A plaintiff may elect restitution in lieu of expectation damages when the defendant's gain exceeds the plaintiff's loss. In quasi-contract, courts imply a duty to pay for benefits conferred under circumstances where it would be unjust to allow retention without compensation."
+      title: "Incorporation by Reference",
+      source: "MEE Rule Statement (16.7%)",
+      text: "A writing that is not executed with the formalities of a will may be incorporated by reference into a will if the writing was in existence at the time the will was executed, the will manifests an intent to incorporate the document, and the will describes the document with sufficient certainty to permit its identification."
+    },
+    {
+      title: "Duty of Care",
+      source: "MEE Rule Statement (14.8%)",
+      text: "The trustee of a trust owes a duty to the beneficiaries to administer the trust with the care, skill, and caution of a reasonably prudent person."
+    },
+    {
+      title: "Devises to Classes",
+      source: "MEE Rule Statement (14.8%)",
+      text: "A class gift is a gift to a group of persons, uncertain in number at the time of the gift, to be ascertained at a future time, who are all to take in equal or in some other definite proportions, the share of each being dependent for its amount upon the ultimate number of persons."
+    },
+    {
+      title: "Creation of Express Trusts",
+      source: "MEE Rule Statement (13.0%)",
+      text: "An express trust is created by the settlor's (the person creating the trust) intent to create a trust, a trustee, a definite beneficiary, and trust property. The settlor must have capacity to create a trust."
+    },
+    {
+      title: "Judicial Modification of Trusts",
+      source: "MEE Rule Statement (13.0%)",
+      text: "A court may modify or terminate a trust if, because of circumstances not anticipated by the settlor, modification or termination will further the purposes of the trust."
+    },
+    {
+      title: "Lapsed Legacies",
+      source: "MEE Rule Statement (13.0%)",
+      text: "Under the common law, if a beneficiary predeceases the testator (the will-maker), the gift to the beneficiary lapses (fails) and passes to the residuary estate. Most states have anti-lapse statutes that save the gift for the descendants of the predeceased beneficiary if the beneficiary was a relative of the testator."
+    },
+    {
+      title: "Revocation of Will by Physical Act",
+      source: "MEE Rule Statement (13.0%)",
+      text: "A will may be revoked by a physical act, such as burning, tearing, canceling, or obliterating, done by the testator with the intent to revoke the will."
+    },
+    {
+      title: "Will Execution Requirements",
+      source: "MEE Rule Statement (11.1%)",
+      text: "A will must be in writing, signed by the testator, and attested to by at least two credible witnesses in the testator's presence."
+    },
+    {
+      title: "Rule Against Perpetuities",
+      source: "MEE Rule Statement (11.1%)",
+      text: "The Rule Against Perpetuities (a complex rule preventing property interests from being tied up for too long) provides that no interest is good unless it must vest, if at all, not later than 21 years after some life in being at the creation of the interest. Many states have modified or abolished the common law rule."
     }
   ],
-  "Federal Powers": [
+  "UCC Secured Transactions": [
     {
-      title: "Commerce Clause",
-      source: "CA Bar Review",
-      text: "Congress has broad authority under the Commerce Clause to regulate channels of interstate commerce, instrumentalities of interstate commerce, and activities that substantially affect interstate commerce. The substantial effects doctrine permits regulation of purely local activities if they, when aggregated with similar activities nationwide, have a substantial effect on interstate commerce. Lopez and Morrison require courts to distinguish economic from non-economic activity, with Congress having less authority to regulate non-economic local conduct even if it incidentally affects commerce."
+      title: "Scope of Article 9",
+      source: "MEE Rule Statement (63.0%)",
+      text: "Article 9 of the Uniform Commercial Code governs security interests in personal property."
     },
     {
-      title: "Supremacy and Preemption",
-      source: "CA Bar Review",
-      text: "The Supremacy Clause provides that federal law is the supreme law of the land, preempting inconsistent state law. Express preemption occurs when Congress explicitly states its intent to occupy a field. Implied preemption includes field preemption — where the scheme of federal regulation is so pervasive that Congress intended to leave no room for state regulation — and conflict preemption, which arises when compliance with both federal and state law is impossible, or when state law stands as an obstacle to the accomplishment of federal objectives."
+      title: "Attachment of the Security Interest",
+      source: "MEE Rule Statement (51.9%)",
+      text: "A security interest attaches (becomes enforceable) to collateral and becomes enforceable against the debtor when there is a security agreement, the secured party has given value, and the debtor has rights in the collateral."
     },
     {
-      title: "Spending Power and Conditional Funds",
-      source: "Feb 2023 Essay 2",
-      text: "Congress has the power to determine where it allocates its funds. It may direct spending properly and reasonably when funds are used for the general welfare of the people. Congress may also make funding conditional, as long as the condition is reasonably connected to and has a proper nexus with the purpose of the fund allocation. A condition that is purely voluntary to the states is generally not unconstitutional on its face."
+      title: "Perfection of the Security Interest",
+      source: "MEE Rule Statement (50.0%)",
+      text: "Perfection of a security interest establishes the secured party's rights in the collateral as against third parties. A security interest is typically perfected by filing a financing statement, but may also be perfected by possession or control of the collateral, or automatically in certain situations."
     },
     {
-      title: "Commandeering",
-      source: "Feb 2023 Essay 2",
-      text: "In order for Congress to pass legislation, it must act through one of its enumerated powers, including the Commerce Clause and the Taxing and Spending powers. Commandeering occurs when Congress passes legislation that forces states to adopt a law, creates an unreasonable funding condition, or compels states to enact similar legislation in order to receive federal funds. Even a facially voluntary condition may be unconstitutional if it is coercive in effect."
+      title: "Purchase-Money Security Interest",
+      source: "MEE Rule Statement (22.2%)",
+      text: "A PMSI (Purchase-Money Security Interest) is a special type of security interest that has priority over other security interests in the same collateral. A PMSI arises when a creditor sells goods to a debtor on credit, retaining a security interest in the goods, or when a creditor advances funds to a debtor to purchase goods, and the creditor takes a security interest in those goods."
+    },
+    {
+      title: "Perfected vs. Unperfected Interests",
+      source: "MEE Rule Statement (22.2%)",
+      text: "A perfected security interest has priority over an unperfected security interest."
+    },
+    {
+      title: "Multiple Perfected Creditors",
+      source: "MEE Rule Statement (20.4%)",
+      text: "As between two perfected secured creditors, the first to file a financing statement or to perfect their security interest has priority."
+    },
+    {
+      title: "Buyers in the Ordinary Course of Biz",
+      source: "MEE Rule Statement (16.7%)",
+      text: "A buyer in the ordinary course of business takes free of a security interest created by the seller, even if the security interest is perfected and the buyer knows of its existence."
+    },
+    {
+      title: "Types of Collateral",
+      source: "MEE Rule Statement (14.8%)",
+      text: "Article 9 recognizes various types of collateral, including goods (consumer goods, equipment, farm products, inventory), tangible intangibles (chattel paper, instruments, documents), and intangible intangibles (accounts, general intangibles)."
+    },
+    {
+      title: "Right to Dispose of Collateral",
+      source: "MEE Rule Statement (9.3%)",
+      text: "Upon default, a secured party may sell, lease, license, or otherwise dispose of the collateral in a commercially reasonable manner."
+    },
+    {
+      title: "Debtor's Rights",
+      source: "MEE Rule Statement (9.3%)",
+      text: "After default, the debtor has a right to redeem the collateral by paying the full amount of the obligation before the secured party disposes of it."
     }
   ]
 };
@@ -406,7 +632,9 @@ for (const [subject, passages] of Object.entries(PASSAGES)) {
   }
 }
 
-function getRandomPassage(excludeText = null) {
-  const pool = excludeText ? ALL_PASSAGES.filter(p => p.text !== excludeText) : ALL_PASSAGES;
+function getRandomPassage(excludeText = null, subject = null) {
+  let pool = subject ? ALL_PASSAGES.filter(p => p.subject === subject) : ALL_PASSAGES;
+  if (excludeText) pool = pool.filter(p => p.text !== excludeText);
+  if (pool.length === 0) pool = subject ? ALL_PASSAGES.filter(p => p.subject === subject) : ALL_PASSAGES;
   return pool[Math.floor(Math.random() * pool.length)];
 }

@@ -25,6 +25,19 @@
   const scoreEntry     = document.getElementById('score-entry');
   const scoreNameInput = document.getElementById('score-name');
   const scoresList     = document.getElementById('scores-list');
+  const subjectSelect  = document.getElementById('subject-select');
+
+  // ── subject dropdown ──────────────────────────────────────────────────────
+  Object.keys(PASSAGES).sort().forEach(function (subject) {
+    const opt = document.createElement('option');
+    opt.value = subject;
+    opt.textContent = subject;
+    subjectSelect.appendChild(opt);
+  });
+
+  subjectSelect.addEventListener('change', function () {
+    newPassage();
+  });
 
   // ── init ───────────────────────────────────────────────────────────────────
   function init(passage) {
@@ -291,12 +304,13 @@
   };
 
   window.newPassage = function () {
-    const p = getRandomPassage(currentPassage ? currentPassage.text : null);
+    const subject = subjectSelect.value || null;
+    const p = getRandomPassage(currentPassage ? currentPassage.text : null, subject);
     init(p);
   };
 
   // ── start ──────────────────────────────────────────────────────────────────
   renderScores();
-  init(getRandomPassage());
+  init(getRandomPassage(null, subjectSelect.value || null));
 
 }());
