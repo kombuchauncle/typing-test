@@ -185,3 +185,86 @@ h1 { font-size: 1.5em; margin-bottom: 0.3em; }
 .char-cursor  { border-left: 2px solid #555; margin-left: -1px; }
 
 .hidden { display: none; }
+
+/* ── keyboard guide ─────────────────────────────────────────────────────── */
+#keyboard-wrap {
+  margin: 8px 0 10px;
+}
+
+.kb-toggle {
+  display: block;
+  font-size: 0.78em;
+  color: #888;
+  text-align: left;
+  margin-bottom: 4px;
+  cursor: pointer;
+}
+
+.kb-toggle input { margin-right: 4px; }
+
+#keyboard-display {
+  background: rgba(255,255,255,0.35);
+  border: 1px solid rgba(0,0,0,0.06);
+  border-radius: 6px;
+  padding: 8px 6px 6px;
+  user-select: none;
+}
+
+.kb-row {
+  display: flex;
+  justify-content: center;
+  gap: 3px;
+  margin-bottom: 3px;
+}
+
+.kb-key {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 28px;
+  border-radius: 4px;
+  font-size: 0.72em;
+  font-weight: 500;
+  border: 1px solid rgba(0,0,0,0.1);
+  transition: background 0.08s, border-color 0.08s;
+  cursor: default;
+  color: #555;
+}
+
+.kb-key[data-finger="pk"] { background: rgba(220,100,100,0.18); }
+.kb-key[data-finger="rg"] { background: rgba(210,145,60,0.18); }
+.kb-key[data-finger="md"] { background: rgba(80,185,130,0.18); }
+.kb-key[data-finger="ix"] { background: rgba(70,130,210,0.18); }
+.kb-key[data-finger="th"] { background: rgba(140,148,160,0.18); }
+
+.kb-key.kb-next[data-finger="pk"] { background: rgba(210,70,70,0.85); color: #fff; border-color: #a03030; }
+.kb-key.kb-next[data-finger="rg"] { background: rgba(200,130,40,0.85); color: #fff; border-color: #906020; }
+.kb-key.kb-next[data-finger="md"] { background: rgba(50,165,100,0.85); color: #fff; border-color: #259060; }
+.kb-key.kb-next[data-finger="ix"] { background: rgba(50,110,195,0.85); color: #fff; border-color: #2050a0; }
+.kb-key.kb-next[data-finger="th"] { background: rgba(90,100,118,0.85); color: #fff; border-color: #405060; }
+
+.kb-home { border-bottom: 2px solid rgba(0,0,0,0.28) !important; }
+
+.kb-shift { width: 44px; }
+
+.kb-space { width: 130px; font-size: 0.68em; color: #999; }
+.kb-space.kb-next { color: #fff; }
+
+.kb-legend {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 5px;
+  font-size: 0.7em;
+  color: #888;
+}
+
+.kb-legend-dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-right: 3px;
+  vertical-align: middle;
+}

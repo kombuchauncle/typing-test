@@ -25,7 +25,9 @@
   const scoreEntry     = document.getElementById('score-entry');
   const scoreNameInput = document.getElementById('score-name');
   const scoresList     = document.getElementById('scores-list');
-  const subjectSelect  = document.getElementById('subject-select');
+  const subjectSelect     = document.getElementById('subject-select');
+  const keyboardDisplay   = document.getElementById('keyboard-display');
+  const showKeyboardCheck = document.getElementById('show-keyboard');
 
   // ── subject dropdown ──────────────────────────────────────────────────────
   Object.keys(PASSAGES).sort().forEach(function (subject) {
@@ -38,6 +40,27 @@
   subjectSelect.addEventListener('change', function () {
     newPassage();
   });
+
+  showKeyboardCheck.addEventListener('change', function () {
+    keyboardDisplay.style.display = this.checked ? '' : 'none';
+  });
+
+  // ── finger/key map ─────────────────────────────────────────────────────────
+  const FINGER = {
+    'q':'pk','a':'pk','z':'pk','p':'pk',';':'pk',"'":'pk','/':'pk',
+    'w':'rg','s':'rg','x':'rg','o':'rg','l':'rg','.':'rg',
+    'e':'md','d':'md','c':'md','i':'md','k':'md',',':'md',
+    'r':'ix','f':'ix','v':'ix','t':'ix','g':'ix','b':'ix',
+    'y':'ix','h':'ix','n':'ix','u':'ix','j':'ix','m':'ix',
+    ' ':'th'
+  };
+
+  const SHIFT_MAP = {
+    'A':'a','B':'b','C':'c','D':'d','E':'e','F':'f','G':'g','H':'h','I':'i',
+    'J':'j','K':'k','L':'l','M':'m','N':'n','O':'o','P':'p','Q':'q','R':'r',
+    'S':'s','T':'t','U':'u','V':'v','W':'w','X':'x','Y':'y','Z':'z',
+    ':':';','"':"'",'<':',','>':'.','?':'/'
+  };
 
   // ── init ───────────────────────────────────────────────────────────────────
   function init(passage) {
@@ -57,6 +80,7 @@
       (passage.subject || '') + ' · ' + passage.title + ' · ' + passage.source;
 
     renderDisplay('');
+    updateKeyboard(passage.text[0]);
     liveWpm.textContent  = '0 wpm';
     liveAcc.textContent  = '100% acc';
     liveTime.textContent = '0:00';
@@ -93,6 +117,63 @@
     if (ch === '>') return '&gt;';
     if (ch === '"') return '&quot;';
     return ch;
+  }
+
+  // ── keyboard display ───────────────────────────────────────────────────────
+  function buildKeyboard() {
+    const rows = [
+      ['q','w','e','r','t','y','u','i','o','p'],
+      ['a','s','d','f','g','h','j','k','l',';',"'"],
+      ['sl','z','x','c','v','b','n','m',',','.','/', 'sr']
+    ];
+    let html = '';
+    rows.forEach(function(row) {
+      html += '<div class="kb-row">';
+      row.forEach(function(k) {
+        if (k === 'sl' || k === 'sr') {
+          html += '<span class="kb-key kb-shift" data-key="' + k + '" data-finger="pk">&#8679;</span>';
+        } else {
+          const f = FINGER[k] || 'th';
+          const home = (k === 'f' || k === 'j') ? ' kb-home' : '';
+          const label = k === "'" ? k : k.toUpperCase();
+          html += '<span class="kb-key' + home + '" data-key="' + k + '" data-finger="' + f + '">' + label + '</span>';
+        }
+      });
+      html += '</div>';
+    });
+    html += '<div class="kb-row"><span class="kb-key kb-space" data-key=" " data-finger="th">space</span></div>';
+    html += '<div class="kb-legend">'
+      + '<span><span class="kb-legend-dot" style="background:rgba(220,100,100,0.7)"></span>pinky</span>'
+      + '<span><span class="kb-legend-dot" style="background:rgba(210,145,60,0.7)"></span>ring</span>'
+      + '<span><span class="kb-legend-dot" style="background:rgba(80,185,130,0.7)"></span>middle</span>'
+      + '<span><span class="kb-legend-dot" style="background:rgba(70,130,210,0.7)"></span>index</span>'
+      + '<span><span class="kb-legend-dot" style="background:rgba(140,148,160,0.7)"></span>thumb</span>'
+      + '</div>';
+    keyboardDisplay.innerHTML = html;
+  }
+
+  function updateKeyboard(nextChar) {
+    if (!showKeyboardCheck.checked) return;
+    keyboardDisplay.querySelectorAll('.kb-next').forEach(function(el) {
+      el.classList.remove('kb-next');
+    });
+    if (!nextChar) return;
+    let key = nextChar;
+    let shift = false;
+    if (SHIFT_MAP[nextChar]) {
+      key = SHIFT_MAP[nextChar];
+      shift = true;
+    } else if (nextChar >= 'A' && nextChar <= 'Z') {
+      key = nextChar.toLowerCase();
+      shift = true;
+    }
+    const el = keyboardDisplay.querySelector('[data-key="' + key + '"]');
+    if (el) el.classList.add('kb-next');
+    if (shift) {
+      keyboardDisplay.querySelectorAll('.kb-shift').forEach(function(s) {
+        s.classList.add('kb-next');
+      });
+    }
   }
 
   // ── timer ──────────────────────────────────────────────────────────────────
@@ -138,6 +219,7 @@
     }
 
     renderDisplay(typed);
+    updateKeyboard(currentPassage.text[typed.length]);
 
     if (startTime) {
       const elapsed = (Date.now() - startTime) / 1000;
@@ -310,6 +392,7 @@
   };
 
   // ── start ──────────────────────────────────────────────────────────────────
+  buildKeyboard();
   renderScores();
   init(getRandomPassage(null, subjectSelect.value || null));
 
